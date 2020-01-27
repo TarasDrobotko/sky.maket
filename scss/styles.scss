@@ -1,0 +1,161 @@
+html,
+body {
+  font: 400 16px Lato;
+  color: #000;
+  line-height: 28.01px;
+  width: 1920px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.text {
+  line-height: 28.01px;
+  opacity: 70%;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1109px;
+  text-align: center;
+}
+
+h1 {
+  font: 700 50px Montseratt;
+  color: #fff;
+  letter-spacing: 1.25px;
+  margin: 0 auto;
+  padding-top: 270px;
+  padding-bottom: 19px;
+}
+
+h2 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28.01px;
+  letter-spacing: 0.4px;
+}
+
+img#about {
+  margin: 100px 30px 100px 0px;
+}
+div#about-us {
+   height: 670px;
+   text-align: left;
+}
+
+div.aside {
+  float: right;
+  width: 535px;
+  margin-top: 144px;
+}
+
+nav #menu {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 28.01px;
+  margin-top: 0;
+  text-align: right;
+
+  a {
+    color: #ffffff;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 25px;
+  }
+
+  li:nth-last-child(2) {
+    padding-right: 42px;
+  }
+
+  li:last-child {
+    padding-right: 0;
+  }
+}
+
+.w-proccess {
+  margin: 86px 25px 119px 0px;
+}
+
+.w-proccess:last-child {
+  margin-right: 0;
+}
+
+div#work-proccess {
+  padding-top: 40px;
+}
+h3.reviews-header {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28.01px;
+  letter-spacing: 0.18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sky {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #1a0c47;
+}
+
+ul#menu {
+  list-style: none;
+}
+
+#logo-footer {
+  color: #1a0c47;
+}
+
+#logo {
+  color: #ffffff;
+  float: left;
+}
+
+div.block2 {
+  height: 650px;
+  background-color: #f6f6f6;
+}
+
+div#header {
+  height: 850px;
+  text-align: center;
+  background-image: url("/images/header-bg.png");
+
+  nav {
+    padding-top: 42px;
+  }
+}
+
+div#contacts {
+  background-image: url("/images/contacts-bg.png");
+}
+
+footer-info {
+  height: 119px;
+  color: #f6f6f6;
+}
+
+.request-call {
+  width: 202px;
+  height: 46px;
+  background-color: #1a0c47;
+  color: #ffffff;
+  border-style: none;
+  margin-top: 43px;
+
+}
