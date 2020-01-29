@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SKY REALSTATE</title>
     <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -35,7 +36,7 @@
         <img src="images/about-us.png" alt=""  id="about"/>
         <div class="aside">
         <h2>About us</h2>
-        <p>
+        <p class="text-dark">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -48,7 +49,7 @@
       <div class="block2">
       <div class="container" id="work-proccess">
         <h2>Our working process</h2>
-        <p>
+        <p class="text-dark">
           Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
           eiusmod.
         </p>
@@ -60,17 +61,19 @@
       </div>
 
       <div class="container">
-        <h2>Our works</h2>
-        <img src="images/our-works-1.png" alt="" />
-        <img src="images/our-works-2.png" alt="" />
-        <img src="images/our-works-3.png" alt="" />
-        <img src="images/our-works-4.png" alt="" />
+        <h2 id="our-works">Our works</h2>
+        <img src="images/our-works-1.png" class="works" alt="" />
+        <img src="images/our-works-2.png" class="works" alt="" />
+        <img src="images/our-works-3.png" class="works" alt="" />
+        <img src="images/our-works-4.png" class="works" alt="" />
       </div>
 
+      <div id="reviews" >
       <div class="container">
         <h2>Reviews</h2>
+        <div class="rev-col-1" >
         <img src="images/“.png" alt="" />
-        <p>
+        <p class="rev-text text">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore tat magna aliquam
           erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation
@@ -78,9 +81,11 @@
         </p>
         <img src="images/Signature.png" alt="" />
         <h3>Deniel Croft</h3>
-        <p>Creative Designer, Levy</p>
+        <p class="text text-small">Creative Designer, Levy</p>
+        </div>
+        <div class="rev-col-1" id="r-col-2">
         <img src="images/“.png" alt="" />
-        <p>
+        <p class="rev-text text">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore tat magna aliquam
           erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation
@@ -88,21 +93,29 @@
         </p>
         <img src="images/Signature.png" alt="" />
         <h3>Martin Ours</h3>
-        <p>Designer, Once</p>
+        <p class="text text-small">Designer, Once</p>
+      </div>
+      </div>
       </div>
 
+      <div class="block2" id="clients-block">
       <div class="container">
-        <h2>Clients</h2>
-        <img src="images/clients-microsoft.png" alt="" />
-        <img src="images/clients-samsung.png" alt="" />
-        <img src="images/clients-ibm.png" alt="" />
-        <img src="images/clients-google.png" alt="" />
-
-        <img src="images/clients-microsoft.png" alt="" />
-        <img src="images/clients-samsung.png" alt="" />
-        <img src="images/clients-ibm.png" alt="" />
-        <img src="images/clients-google.png" alt="" />
+        <h2 id="clients">Clients</h2>
+        <div class="clients-img">
+        <img src="images/client_microsoft.png" alt="" />
+        <img src="images/client_samsung.png" alt="" />
+        <img src="images/client_ibm.png" alt="" />
+        <img src="images/client_google.png" alt="" />
+        </div>
+        <div class="clients-img">
+          <img src="images/client_microsoft.png" alt="" />
+          <img src="images/client_samsung.png" alt="" />
+          <img src="images/client_ibm.png" alt="" />
+          <img src="images/client_google.png" alt="" />
+        </div>
       </div>
+      </div>
+
      <div id="contacts">
       <div class="container">
         <h2>Contacts</h2>
@@ -112,7 +125,7 @@
         <input type="tel" name="tel" placeholder="Phone*" />
         <input type="text" name="message" placeholder="Message*" />
         <input type="button" name="send" value="Send" />
-        <div class="">
+        <div class="rev-col-1">
           <h3>Address</h3>
           <p>
             Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block

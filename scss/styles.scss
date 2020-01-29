@@ -8,15 +8,27 @@ body {
   padding: 0px;
 }
 
-.text {
-  line-height: 28.01px;
+.text,
+.text-dark {
   opacity: 70%;
+}
+
+.text {
   color: #ffffff;
+}
+
+.text-small {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
 }
 
 .container {
   margin: 0 auto;
-  width: 1109px;
+  width: 1110px;
   text-align: center;
 }
 
@@ -34,16 +46,32 @@ h2 {
   font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
-  line-height: 28.01px;
   letter-spacing: 0.4px;
+
+  &#our-works {
+    margin: {
+      top: 102px;
+      bottom: 77px;
+    }
+  }
+
+  &#clients {
+    margin: {
+      bottom: 89px;
+      top: 0;
+    }
+    padding: {
+      top: 100px;
+    }
+  }
 }
 
 img#about {
   margin: 100px 30px 100px 0px;
 }
 div#about-us {
-   height: 670px;
-   text-align: left;
+  height: 670px;
+  text-align: left;
 }
 
 div.aside {
@@ -95,7 +123,6 @@ h3.reviews-header {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
-  line-height: 28.01px;
   letter-spacing: 0.18px;
 }
 
@@ -157,5 +184,64 @@ footer-info {
   color: #ffffff;
   border-style: none;
   margin-top: 43px;
+}
 
+.works {
+  
+  &:nth-child(4) {
+    margin: 25px 25px 0px 0px;
+  }
+
+  &:nth-child(3) {
+    margin: 0px 0px 0px 25px;
+  }
+}
+
+div#reviews {
+  background-image: url("/images/review-bg.png");
+  margin-top: 85px;
+  height: 700px;
+}
+
+div.rev-col-1 {
+  width: 555px;
+  text-align: left;
+  float: left;
+
+  p.rev-text {
+    width: 425px;
+    margin-top: 28px;
+    margin-bottom: 35px;
+  }
+
+  h3 {
+    color: #fff;
+    margin-top: 34px;
+    margin-bottom: -12px;
+  }
+}
+
+div#r-col-2 {
+  float: right;
+}
+
+#reviews h2 {
+  color: #fff;
+  padding-top: 90px;
+  text-align: left;
+  margin-bottom: 87px;
+}
+
+div.clients-img img {
+
+  margin: {
+    right: 25px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+div.container .clients-img:last-child {
+  margin-top: 65px;
 }
