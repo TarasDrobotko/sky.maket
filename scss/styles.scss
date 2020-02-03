@@ -4,6 +4,24 @@
   font-weight: 700;
 }
 
+%menu {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  @extend %font;
+  line-height: 28.01px;
+  margin-top: 0;
+  text-align: right;
+
+  a {
+    color: #ffffff;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 25px;
+  }
+}
+
 html,
 body {
   font: 400 16px Lato;
@@ -12,6 +30,7 @@ body {
   width: 1920px;
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 
 .text,
@@ -91,21 +110,7 @@ div.aside {
 }
 
 nav #menu {
-  font-size: 14px;
-  letter-spacing: 0.14px;
-  @extend %font;
-  line-height: 28.01px;
-  margin-top: 0;
-  text-align: right;
-
-  a {
-    color: #ffffff;
-  }
-
-  li {
-    display: inline-block;
-    padding-right: 25px;
-  }
+  @extend %menu;
 
   li:nth-last-child(2) {
     padding-right: 42px;
@@ -149,10 +154,6 @@ a {
 
 ul#menu {
   list-style: none;
-}
-
-#logo-footer {
-  color: #1a0c47;
 }
 
 #logo {
@@ -255,18 +256,20 @@ div#r-col-2 {
 
 #contacts_layer {
   position: relative;
-  top: -635px;
+  top: -35px;
   width: 540px;
   height: 600px;
   background-color: #ffffff;
   opacity: 0.04;
+  margin-bottom: -600px;
 }
 
 .contacts_layer {
   position: relative;
   height: 180px;
   width: 540px;
-  top: -630px;
+  top: -35px;
+  left: 570px;
   background-color: #ffffff;
   opacity: 0.04;
   margin-bottom: 30px;
@@ -279,6 +282,7 @@ div#r-col-2 {
   height: 600px;
   text-align: left;
   padding-left: 30px;
+  margin-bottom: -600px;
 
   h3 {
     margin-top: 0px;
@@ -332,11 +336,12 @@ div#r-col-2 {
 
 div#contacts_details {
   position: relative;
-  top: -1235px;
+  top: -35px;
   width: 540px;
   height: 600px;
-  float: right;
+  left: 570px;
   text-align: left;
+  margin-bottom: -600px;
   h3 {
     margin-top: 0;
     color: #fff;
@@ -370,6 +375,51 @@ div.clients-img img {
 
 div.container .clients-img:last-child {
   margin-top: 65px;
+}
+
+#sky-realstate-footer {
+  height: 70px;
+  background-color: #f6f6f6;
+  padding-top: 49px;
+}
+
+.footer-inline {
+  display: inline-block;
+}
+
+#footer-logo {
+  color: #1a0c47;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  float: left;
+}
+
+#menu-footer {
+  margin-right: -24px;
+  @extend %menu;
+  a {
+    color: #333333;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+}
+
+.footer-inline:last-child {
+  float: right;
+  margin-right: -30px;
+}
+.social-bar-wrap {
+  a {
+    padding-right: 10px;
+  }
+  a:last-child {
+    padding-right: 0;
+  }
 }
 
 div#copyright {
