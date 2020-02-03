@@ -1,3 +1,9 @@
+nav #menu, h3.reviews-header, #contacts_message input.request-call {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
 html,
 body {
   font: 400 16px Lato;
@@ -67,6 +73,10 @@ div#about-us {
   text-align: left;
 }
 
+div#our-works-block {
+  line-height: normal;
+}
+
 div.aside {
   float: right;
   width: 535px;
@@ -76,8 +86,6 @@ div.aside {
 nav #menu {
   font-size: 14px;
   letter-spacing: 0.14px;
-  font-family: Montserrat;
-  font-weight: 700;
   line-height: 28.01px;
   margin-top: 0;
   text-align: right;
@@ -109,10 +117,7 @@ div#work-proccess {
 }
 
 h3.reviews-header {
-  color: #ffffff;
-  font-family: Montserrat;
   font-size: 18px;
-  font-weight: 700;
   letter-spacing: 0.18px;
 }
 
@@ -159,6 +164,7 @@ div#header nav {
 
 div#contacts {
   background-image: url("/images/contacts-bg.png");
+  height: 860px;
 }
 
 footer-info {
@@ -208,11 +214,125 @@ div#r-col-2 {
   float: right;
 }
 
-#reviews h2 {
+#reviews h2,
+#contacts h2 {
   color: #fff;
-  padding-top: 90px;
   text-align: left;
+}
+
+#reviews h2 {
+  padding-top: 90px;
   margin-bottom: 87px;
+}
+
+#contacts h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 35.12px;
+  padding-top: 79px;
+  padding-bottom: 59px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+#contacts_layer {
+  position: relative;
+  top: -635px;
+  width: 540px;
+  height: 600px;
+  background-color: #ffffff;
+  opacity: 0.04;
+}
+
+.contacts_layer {
+  position: relative;
+  height: 180px;
+  width: 540px;
+  top: -630px;
+  background-color: #ffffff;
+  opacity: 0.04;
+  margin-bottom: 30px;
+}
+
+#contacts_message {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  height: 600px;
+  text-align: left;
+  padding-left: 30px;
+}
+#contacts_message h3 {
+  margin-top: 0px;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 24px;
+  opacity: 1;
+}
+#contacts_message textarea,
+#contacts_message input {
+  padding: 20px;
+  opacity: 0.6;
+  background-color: transparent;
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#contacts_message textarea {
+  resize: none;
+  margin-bottom: 40px;
+  height: 101px;
+  width: 436px;
+}
+#contacts_message input {
+  display: block;
+  width: 436px;
+  margin-bottom: 30px;
+  height: 8px;
+}
+#contacts_message input.request-call {
+  margin-top: -5px;
+  width: 202px;
+  margin-bottom: 10px;
+  height: 46px;
+  border: none;
+  background-color: #1a0c47;
+  opacity: 1;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  letter-spacing: 0.16px;
+}
+
+div#contacts_details {
+  position: relative;
+  top: -1235px;
+  width: 540px;
+  height: 600px;
+  float: right;
+  text-align: left;
+}
+div#contacts_details h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 24px;
+  opacity: 1;
+  margin-bottom: 16px;
+}
+div#contacts_details p {
+  opacity: 0.8;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 30.01px;
+  letter-spacing: 0.16px;
+}
+
+div.contact_details_block {
+  padding: 40px 30px 30px 30px;
+  height: 110px;
+  margin-bottom: 30px;
 }
 
 div.clients-img img {
@@ -224,6 +344,13 @@ div.clients-img img:last-child {
 
 div.container .clients-img:last-child {
   margin-top: 65px;
+}
+
+div#copyright {
+  height: 31px;
+  color: #171717;
+  letter-spacing: 0.16px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
