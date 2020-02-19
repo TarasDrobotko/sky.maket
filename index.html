@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SKY REALSTATE</title>
+    <title>SKY REALESTATE</title>
     <link rel="stylesheet" type="text/css" href="scss/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
       <div id="header">
         <nav class="container">
-          <div class="sky" id="logo">SKY REALSTATE</div>
+          <div class="sky" id="logo">SKY REALESTATE</div>
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul id="menu">
-            <li><a href="">About us</a></li>
-            <li><a href="">Process</a></li>
-            <li><a href="">Our works</a></li>
-            <li><a href="">Reviews</a></li>
-            <li><a href="">Clients</a></li>
-            <li><a href="">Contacts</a></li>
+            <li class="visibility"><a href="">About us</a></li>
+            <li class="visibility"><a href="">Process</a></li>
+            <li class="visibility"><a href="">Our works</a></li>
+            <li class="visibility"><a href="">Reviews</a></li>
+            <li class="visibility"><a href="">Clients</a></li>
+            <li class="visibility"><a href="">Contacts</a></li>
             <li><a href="">+38 (067) 900-99-22</a></li>
           </ul>
         </nav>
@@ -30,7 +37,7 @@
           Lorem ipsum dolor stit<br />
           amet consectet
         </h1>
-        <p class="text">
+        <p class="text" id="p-header">
           Lorem ipsum dolor amet consectetur eiusmod tempor incididunt<br />
           labore et dolore magna minim veniam.
         </p>
@@ -39,14 +46,19 @@
     </header>
     <main>
       <div class="container" id="about-us">
-        <img src="images/about-us.png" alt="" id="about" />
+        <div id="ubout-us-img"></div>
+        <!-- <div id="about_img"></div> -->
+        <!-- <source media="(max-width: 1024px)" srcset="images/tablet/about-us.png">  -->
+        <!-- <img src="images/about-us.png" alt="" id="about" /> -->
         <div class="aside">
           <h2>About us</h2>
           <p class="text-dark">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquipex ea
+            
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+             diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+            aliquipex ea commodo consequat.
           </p>
           <button class="request-call">Request a call</button>
         </div>
@@ -54,7 +66,7 @@
 
       <div class="block2">
         <div class="container" id="work-proccess">
-          <h2>Our working process</h2>
+          <h2>Our Working Process</h2>
           <p class="text-dark">
             Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
             eiusmod.
@@ -72,6 +84,10 @@
 
       <div class="container" id="our-works-block">
         <h2 id="our-works">Our works</h2>
+        <!-- <div class="works"></div>
+        <div class="works"></div>
+        <div class="works"></div>
+        <div class="works"></div> -->
         <img src="images/our-works-1.png" class="works" alt="" />
         <img src="images/our-works-2.png" class="works" alt="" />
         <img src="images/our-works-3.png" class="works" alt="" />

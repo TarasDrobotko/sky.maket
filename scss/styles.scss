@@ -25,6 +25,7 @@
 html,
 body {
   font: 400 16px Lato;
+  font-family: 'Lato', sans-serif;
   color: #000;
   line-height: 28.01px;
   width: 1920px;
@@ -40,12 +41,17 @@ body {
 
 .text {
   color: #ffffff;
+  &#p-header {
+    margin-top: 7px;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+  }
 }
 
 .text-small {
   opacity: 0.5;
   color: #ffffff;
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -58,42 +64,48 @@ body {
 }
 
 h1 {
-  font: 700 50px Montseratt;
+  font: 700 50px Montserrat;
   color: #fff;
-  letter-spacing: 1.25px;
   margin: 0 auto;
-  padding-top: 270px;
+  padding-top: 185px;
   padding-bottom: 19px;
+  letter-spacing: 0.02em;
 }
 
 h2 {
   color: #333333;
   font-family: Montserrat;
   font-size: 40px;
-  font-weight: 700;
   letter-spacing: 0.4px;
 
   &#our-works {
     margin: {
-      top: 102px;
-      bottom: 77px;
+      top: 92px;
+      bottom: 70px;
     }
   }
 
   &#clients {
     margin: {
-      bottom: 89px;
+      bottom: 94px;
       top: 0;
     }
     padding: {
-      top: 100px;
+      top: 107px;
     }
+    font-size: 50px;
+
   }
 }
 
-img#about {
+div#ubout-us-img {
+  width: 540px;
+  float: left;
+  height: 470px;
   margin: 100px 30px 100px 0px;
+  background-image: url("/images/about-us.png");
 }
+
 div#about-us {
   height: 670px;
   text-align: left;
@@ -105,15 +117,19 @@ div#our-works-block {
 
 div.aside {
   float: right;
-  width: 535px;
-  margin-top: 144px;
+  width: 540px;
+  margin-top: 151px;
+  p {
+    width: 455px;
+  }
+ 
 }
 
 nav #menu {
   @extend %menu;
 
   li:nth-last-child(2) {
-    padding-right: 42px;
+    padding-right: 39px;
   }
 
   li:last-child {
@@ -122,15 +138,19 @@ nav #menu {
 }
 
 .w-proccess {
-  margin: 86px 25px 119px 0px;
+  margin: 81px 25px 119px 0px;
 }
 
 .w-proccess:last-child {
   margin-right: 0;
+  
 }
 
 div#work-proccess {
-  padding-top: 40px;
+  padding-top: 50px;
+  h2 {
+    margin-bottom: 40px;
+  }
 }
 h3.reviews-header {
   @extend %font;
@@ -159,6 +179,7 @@ ul#menu {
 #logo {
   color: #ffffff;
   float: left;
+  letter-spacing: 0.03em;
 }
 
 div.block2 {
@@ -172,7 +193,7 @@ div#header {
   background-image: url("/images/header-bg.png");
 
   nav {
-    padding-top: 42px;
+    padding-top: 39px;
   }
 }
 
@@ -192,16 +213,23 @@ footer-info {
   background-color: #1a0c47;
   color: #ffffff;
   border-style: none;
-  margin-top: 43px;
+  margin-top: 38px;
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+ 
+  letter-spacing: 0.06em;
 }
 
 .works {
   &:nth-child(4) {
+    //background-image: url("/images/our-works-3.png");
     margin: 25px 25px 0px 0px;
   }
 
   &:nth-child(3) {
     margin: 0px 0px 0px 25px;
+  //  background-image: url("/images/our-works-2.png");
   }
 }
 
@@ -209,39 +237,52 @@ div#reviews {
   background-image: url("/images/review-bg.png");
   margin-top: 85px;
   height: 700px;
+  h3 {
+    letter-spacing: 0.06em;
+  }
 }
 
 div.rev-col-1 {
   width: 555px;
   text-align: left;
   float: left;
+  margin-bottom: 35px;
+
 
   p.rev-text {
     width: 425px;
-    margin-top: 28px;
+    margin-top: 25px;
     margin-bottom: 35px;
   }
 
   h3 {
     color: #fff;
-    margin-top: 34px;
+    margin-top: 24px;
     margin-bottom: -12px;
   }
 }
 
 div#r-col-2 {
   float: right;
-}
+  margin-left: -15px;
+
+  img, p, h3 {
+    margin-left: 15px;
+  }
+  }
+
 
 #reviews h2,
 #contacts h2 {
   color: #fff;
   text-align: left;
+  margin-left: 0px;
 }
 
 #reviews h2 {
-  padding-top: 90px;
-  margin-bottom: 87px;
+  padding-top: 92px;
+  margin-bottom: 89px;
+  margin-left: -3px;
 }
 
 #contacts h2 {
@@ -284,13 +325,14 @@ div#r-col-2 {
   padding-left: 30px;
   margin-bottom: -600px;
 
+
   h3 {
-    margin-top: 0px;
-    padding-top: 5px;
+    font-family: Montserrat;
     color: #fff;
     font-size: 24px;
     opacity: 1;
-    margin-bottom: 27px;
+    letter-spacing: 0.6px;
+    margin-bottom: 30px;
   }
 
   textarea,
@@ -307,17 +349,18 @@ div#r-col-2 {
   }
 
   textarea {
+    line-height: 0.5em;
     resize: none;
     margin-bottom: 40px;
     height: 99px;
-    width: 436px;
+    width: 438px;
   }
 
   input {
     display: block;
-    width: 436px;
+    width: 438px;
     margin-bottom: 30px;
-    height: 6px;
+    height: 8px;
     &.request-call {
       margin-top: -5px;
       width: 202px;
@@ -327,9 +370,10 @@ div#r-col-2 {
       @extend %font;
       background-color: #1a0c47;
       opacity: 1;
-      padding-top: 16px;
+      padding-top: 13px;
       padding-bottom: 17px;
-      letter-spacing: 0.16px;
+      letter-spacing: 0.14px;
+      font-size: 16px;
     }
   }
 }
@@ -343,11 +387,13 @@ div#contacts_details {
   text-align: left;
   margin-bottom: -600px;
   h3 {
-    margin-top: 0;
+    margin-top: -5px;
     color: #fff;
     font-size: 24px;
     opacity: 1;
-    margin-bottom: 19px;
+    margin-bottom: 24px;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
   }
 
   p {
@@ -374,13 +420,13 @@ div.clients-img img {
 }
 
 div.container .clients-img:last-child {
-  margin-top: 65px;
+  margin-top: 62px;
 }
 
 #sky-realstate-footer {
   height: 70px;
   background-color: #f6f6f6;
-  padding-top: 49px;
+  padding-top: 47px;
 }
 
 .footer-inline {
@@ -399,14 +445,18 @@ div.container .clients-img:last-child {
 }
 
 #menu-footer {
-  margin-right: -24px;
+  margin-right: -35px;
+  
   @extend %menu;
   a {
     color: #333333;
   }
   li:last-child {
-    padding-right: 0;
+    padding-right: 0px;
+    padding-left: 5px;
+    
   }
+  
 }
 
 .footer-inline:last-child {
@@ -414,8 +464,9 @@ div.container .clients-img:last-child {
   margin-right: -30px;
 }
 .social-bar-wrap {
+  margin-top: 3px;
   a {
-    padding-right: 10px;
+    padding-right: 12px;
   }
   a:last-child {
     padding-right: 0;
@@ -425,6 +476,351 @@ div.container .clients-img:last-child {
 div#copyright {
   height: 31px;
   color: #171717;
+  //padding-top: 10px;
   letter-spacing: 0.16px;
   text-align: left;
+  line-height: 2.5em;
+}
+
+/* media */
+
+@media only screen and (max-width: 1024px) {
+  html,
+  body {
+    width: 1020px;
+  }
+
+  .container {
+    width: 920px;
+  }
+
+  h1 {
+    padding-top: 160px;
+    padding-bottom: 33px;
+    line-height: 1em;
+    letter-spacing: 0.025em;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+#header .request-call {
+  letter-spacing: 0.04em;
+  margin-left: 3px;
+  padding-bottom: 5px;
+}
+
+  
+  div#about-us {
+    height: 510px;
+  }
+
+  div#ubout-us-img {
+    width: 445px;
+    float: left;
+    height: 390px;
+    margin: 60px 30px 60px 0px;
+    background-image: url("/images/tablet/about-us.png");
+  }
+    #our-works-block   {
+      img {
+      width: 445px;
+      height: 390px;
+      margin: 60px 30px 60px 0px;
+      }
+    }
+
+  #our-works-block
+  {
+    height: 900px;
+    img {
+      margin: 25px 25px 25px 0px;
+    }
+  }
+
+  #our-works-block img {
+    &:nth-child(4) {
+      margin: -25px 25px 25px 0px;
+    }
+  
+    &:nth-child(3) {
+      margin: 25px 0px 25px 0px;
+    }
+    &:last-child {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  div.aside {
+    width: 445px;
+    margin-top: 112px;
+    line-height: 1.3em;
+    p {
+      margin-bottom: 8px;
+      font-size: 13px;
+      width: 400px;
+      letter-spacing: 0.04em;
+    }
+    .request-call {
+      margin-left: 2px;
+    }
+  
+  }
+
+  div#header {
+    height: 767px;
+  }
+
+  #work-proccess img {
+    width: 208px;
+    height: 205px;
+  }
+
+  .w-proccess {
+    margin: 28px 25px 119px 0px;
+  }
+
+  div.block2 {
+    height: 458px;
+  }
+
+  div#work-proccess {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding-top: 35px;
+    h2 {
+      margin-bottom: 27px;
+    }
+  }
+
+  h2#our-works {
+    margin-top: 67px;
+    margin-bottom: 35px;
+  }
+
+  div#reviews {
+    height: 620px;
+    h2 {
+      display: none;
+    }
+    p.rev-text {
+      font-size: 14px; 
+      letter-spacing: 0.01em;
+      width: 400px;
+      margin-bottom: 65px;
+    }
+
+    .text-small {
+      letter-spacing: 0.2px;
+      margin-left: 1px;
+    }
+  }
+
+  div.rev-col-1 {
+    margin-top: 90px;
+    width: 460px;
+    p.rev-text, img, h3 {
+      margin-left: 1px;
+    }
+  }
+
+  div#r-col-2 {
+    p.rev-text, img, .text-small, h3 {
+    margin-left: 16px;
+  }
+}
+
+div#reviews h3 {
+  letter-spacing: 0.06em;
+}
+
+div#clients-block {
+  height: 475px;
+}
+div.container .clients-img {
+&:last-child {
+   margin-top: 48px;
+}
+& img {
+  height: 90px;
+  width: 208px;
+}
+}
+
+h2#clients{
+  margin: {
+    bottom: 58px;
+    top: 0;
+  }
+  padding: {
+    top: 70px;
+  }
+  font-size: 30px;
+  letter-spacing: 0;
+  margin-left: 3px;
+
+}
+
+div#contacts 
+{
+  height: 780px;
+  h2 {
+  padding: {
+    top: 63px;
+  }
+  font-size: 30px;
+  letter-spacing: 0;
+  padding-bottom: 39px;
+}
+}
+
+#contacts_layer {
+  top: -33px;
+  width: 445px;
+  height: 572px;
+  background-color: #ffffff;
+  opacity: 0.04;
+  margin-bottom: -572px;
+  margin-left: 1px;
+}
+
+div#contacts_details  {
+width: 445px;
+height: 572px;
+left: 475px;
+text-align: left;
+margin-bottom: -572px;
+h3 {
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+   
+}
+
+#contacts_message, div#contacts_details  { 
+  h3 {
+  font-size: 20px;
+  opacity: 1;
+  letter-spacing: 0.6px;
+}
+p {
+  letter-spacing: 0.04em;
+  font-size: 13px;
+  margin-left: 2px;
+}
+}
+#contacts_message {
+  margin-left: 2px;
+  h3 {
+    margin-bottom: 30px;
+  }
+input {
+  display: block;
+  width: 344px;
+  margin-bottom: 30px;
+  height: 8px;
+}
+textarea {
+  margin-bottom: 40px;
+  height: 70px;
+  width: 344px;
+}
+}
+
+.contacts_layer {
+  height: 170px;
+  width: 445px;
+  top: -33px;
+  left: 475px;
+  background-color: 
+  #ffffff;
+  opacity: 0.04;
+  margin-bottom: 30px;
+}
+
+div.contact_details_block {
+  padding: 37px 30px 30px 30px;
+  height: 103px;
+  margin-bottom: 30px;
+}
+
+#sky-realstate-footer {
+  padding-top: 45px;
+}
+
+nav #menu, #menu-footer {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 28.01px;
+  text-align: right;
+  padding-left: 0px;
+  margin-left: 30px;
+}
+
+#sky-realstate-footer {
+  height: 72px;
+}
+#menu-footer {
+  margin-right: 30px;
+}
+
+.footer-inline:last-child {
+  margin-right: 0px;
+}
+
+.social-bar-wrap a {
+  padding-right: 10px;
+}
+
+div#copyright {
+  line-height: 2.3em;
+}
+
+.menu__icon {
+  //display: none;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  position: relative;
+  left: 878px;
+  cursor: pointer;
+  border: 2px solid #5b5876;
+}
+
+.menu__icon span {
+ display: block;
+ position: absolute;
+ height: 2px;
+ width: 45%;
+ left: 25%;
+ background: #fff;
+ opacity: 1;
+}
+
+.menu__icon span:nth-child(1) {
+ top: 13px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+ top: 19px;
+}
+
+.menu__icon span:nth-child(4) {
+ top: 25px;
+}
+
+
+ul#menu li.visibility {
+  display: none;
+}
+
+nav #menu {
+ margin-top: -47px;
+
+ li:last-child {
+   margin-right: 89px;
+ }
+  }
+
 }
