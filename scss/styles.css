@@ -523,7 +523,7 @@ div#copyright {
 
   #work-proccess img {
     width: 208px;
-    height: 205px;
+    height: 208px;
   }
 
   .w-proccess {
@@ -539,8 +539,11 @@ div#copyright {
     letter-spacing: 0.04em;
     padding-top: 35px;
   }
+  div#work-proccess h2, div#work-proccess p {
+    margin-left: 2px;
+  }
   div#work-proccess h2 {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 
   h2#our-works {
@@ -586,15 +589,15 @@ div#copyright {
   }
 
   div.container .clients-img:last-child {
-    margin-top: 48px;
+    margin-top: 47px;
   }
   div.container .clients-img img {
-    height: 90px;
+    height: 94px;
     width: 208px;
   }
 
   h2#clients {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
     margin-top: 0;
     padding-top: 70px;
     font-size: 30px;

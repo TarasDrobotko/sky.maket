@@ -223,13 +223,11 @@ footer-info {
 
 .works {
   &:nth-child(4) {
-    //background-image: url("/images/our-works-3.png");
     margin: 25px 25px 0px 0px;
   }
 
   &:nth-child(3) {
     margin: 0px 0px 0px 25px;
-  //  background-image: url("/images/our-works-2.png");
   }
 }
 
@@ -476,7 +474,6 @@ div.container .clients-img:last-child {
 div#copyright {
   height: 31px;
   color: #171717;
-  //padding-top: 10px;
   letter-spacing: 0.16px;
   text-align: left;
   line-height: 2.5em;
@@ -574,7 +571,7 @@ div#copyright {
 
   #work-proccess img {
     width: 208px;
-    height: 205px;
+    height: 208px;
   }
 
   .w-proccess {
@@ -589,8 +586,13 @@ div#copyright {
     font-size: 13px;
     letter-spacing: 0.04em;
     padding-top: 35px;
+     
+    h2, p {
+      margin-left: 2px;
+    }
+
     h2 {
-      margin-bottom: 27px;
+      margin-bottom: 24px;
     }
   }
 
@@ -640,17 +642,17 @@ div#clients-block {
 }
 div.container .clients-img {
 &:last-child {
-   margin-top: 48px;
+   margin-top: 47px;
 }
 & img {
-  height: 90px;
+  height: 94px;
   width: 208px;
 }
 }
 
 h2#clients{
   margin: {
-    bottom: 58px;
+    bottom: 54px;
     top: 0;
   }
   padding: {
