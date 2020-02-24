@@ -1,4 +1,4 @@
-nav #menu, #menu-footer, h3.reviews-header, #contacts_message input.request-call {
+nav #menu, #menu-footer, h3.reviews-header, .request-call, #contacts_message input.request-call {
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 700;
@@ -22,7 +22,7 @@ nav #menu li, #menu-footer li {
 html,
 body {
   font: 400 16px Lato;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000;
   line-height: 28.01px;
   width: 1920px;
@@ -40,15 +40,17 @@ body {
   color: #ffffff;
 }
 .text#p-header {
+  margin: 0 auto;
   margin-top: 7px;
   line-height: 24px;
   letter-spacing: 0.36px;
+  width: 500px;
 }
 
 .text-small {
   opacity: 0.5;
   color: #ffffff;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -67,6 +69,7 @@ h1 {
   padding-top: 185px;
   padding-bottom: 19px;
   letter-spacing: 0.02em;
+  width: 700px;
 }
 
 h2 {
@@ -194,10 +197,8 @@ footer-info {
   color: #ffffff;
   border-style: none;
   margin-top: 38px;
-  font-size: 1.1em;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.06em;
+  font-size: 1em;
+  letter-spacing: 0.02em;
 }
 
 .works:nth-child(4) {
@@ -214,6 +215,9 @@ div#reviews {
 }
 div#reviews h3 {
   letter-spacing: 0.06em;
+}
+div#reviews input[type="radio"] {
+  display: none;
 }
 
 div.rev-col-1 {
@@ -237,7 +241,9 @@ div#r-col-2 {
   float: right;
   margin-left: -15px;
 }
-div#r-col-2 img, div#r-col-2 p, div#r-col-2 h3 {
+div#r-col-2 img,
+div#r-col-2 p,
+div#r-col-2 h3 {
   margin-left: 15px;
 }
 
@@ -262,6 +268,7 @@ div#r-col-2 img, div#r-col-2 p, div#r-col-2 h3 {
   padding-bottom: 59px;
   margin-top: 0px;
   margin-bottom: 35px;
+  letter-spacing: 0;
 }
 
 #contacts_layer {
@@ -364,7 +371,7 @@ div#contacts_details p {
   color: #ffffff;
   font-weight: 700;
   line-height: 30.01px;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.18px;
 }
 
 div.contact_details_block {
@@ -455,6 +462,7 @@ div#copyright {
     padding-bottom: 33px;
     line-height: 1em;
     letter-spacing: 0.025em;
+    width: 720px;
   }
 
   h2 {
@@ -462,9 +470,16 @@ div#copyright {
   }
 
   #header .request-call {
-    letter-spacing: 0.04em;
     margin-left: 3px;
-    padding-bottom: 5px;
+    margin-top: 55px;
+    letter-spacing: 0.02em;
+    font: 700 1em Montserrat;
+  }
+
+  .text#p-header {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 5px;
   }
 
   div#about-us {
@@ -519,6 +534,7 @@ div#copyright {
 
   div#header {
     height: 767px;
+    background-image: url("/images/tablet/header-bg.png");
   }
 
   #work-proccess img {
@@ -539,7 +555,8 @@ div#copyright {
     letter-spacing: 0.04em;
     padding-top: 35px;
   }
-  div#work-proccess h2, div#work-proccess p {
+  div#work-proccess h2,
+  div#work-proccess p {
     margin-left: 2px;
   }
   div#work-proccess h2 {
@@ -567,16 +584,24 @@ div#copyright {
     letter-spacing: 0.2px;
     margin-left: 1px;
   }
+  div#reviews input[type="radio"] {
+    display: none;
+  }
 
   div.rev-col-1 {
     margin-top: 90px;
     width: 460px;
   }
-  div.rev-col-1 p.rev-text, div.rev-col-1 img, div.rev-col-1 h3 {
+  div.rev-col-1 p.rev-text,
+  div.rev-col-1 img,
+  div.rev-col-1 h3 {
     margin-left: 1px;
   }
 
-  div#r-col-2 p.rev-text, div#r-col-2 img, div#r-col-2 .text-small, div#r-col-2 h3 {
+  div#r-col-2 p.rev-text,
+  div#r-col-2 img,
+  div#r-col-2 .text-small,
+  div#r-col-2 h3 {
     margin-left: 16px;
   }
 
@@ -637,13 +662,15 @@ div#copyright {
     margin-left: 2px;
   }
 
-  #contacts_message h3, div#contacts_details h3 {
+  #contacts_message h3,
+  div#contacts_details h3 {
     font-size: 20px;
     opacity: 1;
     letter-spacing: 0.6px;
   }
-  #contacts_message p, div#contacts_details p {
-    letter-spacing: 0.04em;
+  #contacts_message p,
+  div#contacts_details p {
+    letter-spacing: 0.045em;
     font-size: 13px;
     margin-left: 2px;
   }
@@ -686,7 +713,8 @@ div#copyright {
     padding-top: 45px;
   }
 
-  nav #menu, #menu-footer {
+  nav #menu,
+  #menu-footer {
     font-size: 14px;
     letter-spacing: 0.14px;
     line-height: 28.01px;
@@ -739,7 +767,8 @@ div#copyright {
     top: 13px;
   }
 
-  .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  .menu__icon span:nth-child(2),
+  .menu__icon span:nth-child(3) {
     top: 19px;
   }
 
@@ -756,6 +785,411 @@ div#copyright {
   }
   nav #menu li:last-child {
     margin-right: 89px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #header .request-call, div.aside .request-call {
+    letter-spacing: 0.02em;
+    font: 700 1.2em Montserrat;
+    padding-bottom: 0;
+  }
+
+  html,
+  body {
+    font: 400 13px Lato;
+    font-family: "Lato", sans-serif;
+    color: #000;
+    width: 320px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+  }
+
+  h1 {
+    font: 700 30px Montserrat;
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 19px;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+  }
+
+  h1,
+  .text#p-header {
+    width: 290px;
+  }
+
+  .text#p-header {
+    line-height: 1.6em;
+    letter-spacing: 0.06em;
+    opacity: 1;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 290px;
+    text-align: center;
+  }
+
+  div#header {
+    height: 640px;
+    background-image: url("/images/mobile/header-bg.png");
+  }
+
+  h2 {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+  }
+  h2#our-works {
+    margin-top: 53px;
+  }
+  h2#clients {
+    font-size: 24px;
+    margin-left: -5px;
+    padding-top: 68px;
+    margin-bottom: 34px;
+  }
+
+  .menu__icon {
+    left: 245px;
+    top: 14px;
+  }
+
+  .sky {
+    font-size: 14px;
+  }
+  .sky#logo {
+    margin: 0 auto;
+    float: none;
+    letter-spacing: 0.12em;
+  }
+
+  div#header nav {
+    padding-top: 14px;
+  }
+
+  nav #menu li:last-child {
+    margin: 23px 89px 0 -29px;
+    float: left;
+  }
+
+  #header .request-call {
+    margin-left: 0;
+    margin-top: 46px;
+  }
+
+  div#ubout-us-img {
+    width: 320px;
+    height: 344px;
+    float: none;
+    margin-left: -15px;
+    margin-top: 382px;
+    background-image: url("/images/mobile/about-us.png");
+  }
+
+  div.aside {
+    float: none;
+    width: 320px;
+    text-align: center;
+    margin-top: -733px;
+  }
+  div.aside p,
+  div.aside h2 {
+    width: 290px;
+  }
+  div.aside p {
+    margin-top: 27px;
+    line-height: 1.6em;
+  }
+  div.aside .request-call {
+    position: relative;
+    margin-top: 36px;
+    left: -15px;
+  }
+
+  div#work-proccess img {
+    width: 135px;
+    height: 135px;
+  }
+  div#work-proccess h2 {
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 22px;
+    line-height: 1.1em;
+  }
+
+  .w-proccess {
+    margin: 14px 17px 0 -2px;
+  }
+  .w-proccess:nth-child(4), .w-proccess:nth-child(6) {
+    margin-right: 0;
+  }
+
+  div.block2 {
+    height: 555px;
+    margin-top: -168px;
+  }
+  div.block2 p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6em;
+  }
+
+  #our-works-block {
+    height: 1456px;
+  }
+  #our-works-block h2#our-works {
+    margin-bottom: 45px;
+  }
+  #our-works-block img:nth-child(3), #our-works-block img:nth-child(4), #our-works-block img:last-child,
+  #our-works-block img {
+    width: 320px;
+    height: 300px;
+    margin: 0 0 15px -15px;
+  }
+
+  div#reviews {
+    height: 620px;
+    margin-top: -53px;
+    background-image: url("/images/mobile/review-bg.png");
+    margin-bottom: 168px;
+  }
+
+  div#reviews {
+    margin-left: 0;
+  }
+  div#reviews h3 {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-top: 33px;
+  }
+  div#reviews .text-small {
+    line-height: 2.2em;
+    margin-left: 0;
+  }
+  div#reviews div.rev-col-1 {
+    margin-top: 65px;
+    width: 290px;
+  }
+  div#reviews div.rev-col-1 p.rev-text {
+    margin-top: 28px;
+    margin-left: 0;
+    letter-spacing: 0.01em;
+    line-height: 1.85em;
+    width: 290px;
+    margin-bottom: 55px;
+  }
+
+  div#r-col-2 {
+    display: none;
+  }
+
+  /* radio inputs */
+  .radio input {
+    display: none;
+  }
+
+  .radio span {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    top: -7px;
+    left: -2px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.1;
+  }
+  .radio span:last-child {
+    margin-left: 7px;
+  }
+
+  .radio input:checked + span {
+    background: #fff;
+    opacity: 1;
+  }
+
+  div#clients-block {
+    height: 480px;
+  }
+
+  div.container .clients-img img {
+    height: 60px;
+    width: 135px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  div.container .clients-img:last-child {
+    margin-top: 0;
+  }
+  div.container .clients-img img:nth-child(even) {
+    margin-right: 0;
+  }
+
+  div#contacts {
+    margin-left: 0;
+    height: 1195px;
+  }
+  div#contacts h2 {
+    padding-top: 43px;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+
+  #contacts_layer {
+    width: 290px;
+    height: 487px;
+    margin-bottom: -487px;
+    margin-left: 1px;
+    top: -43px;
+  }
+
+  div#contacts_details {
+    width: 290px;
+    height: 487px;
+    left: 0px;
+    text-align: left;
+    margin-bottom: -487px;
+    top: 482px;
+  }
+  div#contacts_details h3 {
+    margin-bottom: 17px;
+    margin-left: -2px;
+  }
+
+  #contacts_message h3,
+  div#contacts_details h3 {
+    font-size: 16px;
+    opacity: 1;
+    letter-spacing: 0.6px;
+    margin-left: -2px;
+  }
+  #contacts_message input,
+  #contacts_message textarea,
+  div#contacts_details input,
+  div#contacts_details textarea {
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  #contacts_message ::-webkit-input-placeholder,
+  div#contacts_details ::-webkit-input-placeholder {
+    /* Edge */
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  #contacts_message :-ms-input-placeholder,
+  div#contacts_details :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  #contacts_message ::placeholder,
+  div#contacts_details ::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  #contacts_message p,
+  div#contacts_details p {
+    letter-spacing: 0.01em;
+    margin-left: 0px;
+    margin-right: 10px;
+    line-height: 1.8em;
+  }
+
+  #contacts_message {
+    padding-left: 14px;
+  }
+  #contacts_message h3 {
+    margin-top: 53px;
+    margin-bottom: 28px;
+    letter-spacing: 0.61px;
+  }
+  #contacts_message input {
+    width: 232px;
+    margin-bottom: 20px;
+    padding: 17px 13px 13px 13px;
+  }
+  #contacts_message textarea {
+    margin-bottom: 42px;
+    height: 48px;
+    width: 230px;
+    padding: 17px 15px 13px 13px;
+  }
+
+  .details.contacts_layer {
+    height: 160px;
+    width: 290px;
+    top: 485px;
+    left: 0px;
+    background-color: #ffffff;
+    opacity: 0.04;
+    margin-bottom: 20px;
+  }
+
+  div.contact_details_block {
+    padding: 38px 15px 20px 15px;
+    height: 102px;
+    margin-bottom: 20px;
+  }
+
+  input.request-call {
+    margin-left: 28px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    opacity: 1;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    letter-spacing: 0.14px;
+    font-size: 16px;
+  }
+
+  #sky-realstate-footer {
+    height: 290px;
+    padding-top: 35px;
+  }
+  #sky-realstate-footer .container {
+    text-align: center;
+  }
+
+  #footer-logo {
+    font-size: 16px;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  #menu-footer {
+    text-align: center;
+  }
+  #menu-footer li {
+    display: block;
+    padding-right: 0;
+  }
+
+  .social-bar-wrap {
+    margin-top: 8px;
+  }
+  .social-bar-wrap a {
+    padding-right: 11px;
+  }
+
+  .footer-inline:last-child {
+    float: none;
+    display: block;
+  }
+
+  #menu-footer li:last-child {
+    padding-left: 0;
+  }
+
+  div#copyright {
+    height: 31px;
+    letter-spacing: 0.5px;
+    text-align: center;
   }
 }
 
