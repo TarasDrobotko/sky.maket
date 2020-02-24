@@ -1046,6 +1046,15 @@ div#copyright {
   }
 
   div#r-col-2 {
+    p.rev-text,
+    img,
+    .text-small,
+    h3 {
+      margin-left: 0;
+    }
+  }
+
+  #r-col-2 {
     display: none;
   }
 
@@ -1073,6 +1082,8 @@ div#copyright {
     background: #fff;
     opacity: 1;
   }
+
+
 
   div#clients-block {
     height: 480px;

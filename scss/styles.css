@@ -985,7 +985,14 @@ div#copyright {
     margin-bottom: 55px;
   }
 
-  div#r-col-2 {
+  div#r-col-2 p.rev-text,
+  div#r-col-2 img,
+  div#r-col-2 .text-small,
+  div#r-col-2 h3 {
+    margin-left: 0;
+  }
+
+  #r-col-2 {
     display: none;
   }
 
