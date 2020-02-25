@@ -1,6 +1,7 @@
+var SITEURL = document.location.origin+'/';
+
 $(document).ready(function() {
   windowSize = document.documentElement.clientWidth;
-  var SITEURL = document.location.origin+'/';
   if (windowSize <= 1024) {
     for (i = 1; i <= 4; i++) {
       $("#work-process-" + i).attr(
@@ -48,7 +49,7 @@ $(document).ready(function() {
 
     $("label.radio").click(function(){  
 
-      $.ajax({  
+      $.ajax({ 
            url: SITEURL,  
            method:"POST",  
            data:{},  
