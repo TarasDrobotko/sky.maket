@@ -1,6 +1,6 @@
 $(document).ready(function() {
   windowSize = document.documentElement.clientWidth;
-
+  var SITEURL = document.location.origin+'/';
   if (windowSize <= 1024) {
     for (i = 1; i <= 4; i++) {
       $("#work-process-" + i).attr(
@@ -47,8 +47,9 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(4)").attr("src", "images/mobile/google.png");
 
     $("label.radio").click(function(){  
+
       $.ajax({  
-           url:"/",  
+           url: SITEURL,  
            method:"POST",  
            data:{},  
            success:function(data){  
