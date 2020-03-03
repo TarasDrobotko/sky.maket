@@ -45,13 +45,19 @@ body {
     margin: 0 auto;
     margin-top: 7px;
     line-height: 24px;
-    letter-spacing: 0.36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     width: 500px;
+    opacity: 1;
+
+    span {
+      margin-left: 5px;
+    }
   }
 }
 
 .text-small {
-  opacity: 0.5;
+  opacity: 0.7;
   color: #ffffff;
   font-family: "Lato";
   font-size: 14px;
@@ -71,7 +77,7 @@ h1 {
   margin: 0 auto;
   padding-top: 185px;
   padding-bottom: 19px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
   width: 700px;
 }
 
@@ -86,6 +92,10 @@ h2 {
       top: 92px;
       bottom: 70px;
     }
+  }
+
+  .aside & {
+    margin-left: -2px;
   }
 
   &#clients {
@@ -123,6 +133,8 @@ div.aside {
   margin-top: 151px;
   p {
     width: 455px;
+    letter-spacing: 0.006em;
+
   }
 }
 
@@ -140,16 +152,22 @@ nav #menu {
 
 .w-proccess {
   margin: 81px 25px 119px 0px;
-}
 
-.w-proccess:last-child {
-  margin-right: 0;
+&:last-child {
+  margin-right: -5px;
+  margin-left: 6px;
+
+}
 }
 
 div#work-proccess {
   padding-top: 50px;
   h2 {
     margin-bottom: 40px;
+  }
+  p.text-dark {
+    letter-spacing: 0.005em;
+    margin-left: 2px;
   }
 }
 h3.reviews-header {
@@ -221,6 +239,7 @@ footer-info {
 
 div#header .request-call {
   margin-top: 55px;
+  padding: 0 0 3px 0;
 }
 
 .works {
@@ -238,7 +257,8 @@ div#reviews {
   margin-top: 85px;
   height: 700px;
   h3 {
-    letter-spacing: 0.06em;
+    letter-spacing: 0;
+    font-family: Montserrat;
   }
 
   input[type="radio"] {
@@ -253,15 +273,18 @@ div.rev-col-1 {
   margin-bottom: 35px;
 
   p.rev-text {
-    width: 425px;
+    width: 435px;
     margin-top: 25px;
     margin-bottom: 35px;
+    letter-spacing: 0.006em;
+      opacity: 90%;
   }
 
   h3 {
     color: #fff;
-    margin-top: 24px;
+    margin-top: 23px;
     margin-bottom: -12px;
+    font-size: 18px;
   }
 }
 
@@ -284,8 +307,8 @@ div#r-col-2 {
 }
 
 #reviews h2 {
-  padding-top: 92px;
-  margin-bottom: 89px;
+  padding-top: 93px;
+  margin-bottom: 88px;
   margin-left: -3px;
 }
 
@@ -464,7 +487,7 @@ div.container .clients-img:last-child {
 }
 
 #menu-footer {
-  margin-right: -35px;
+  margin-right: -37px;
 
   @extend %menu;
   a {
@@ -472,19 +495,20 @@ div.container .clients-img:last-child {
   }
   li:last-child {
     padding-right: 0px;
-    padding-left: 5px;
+    padding-left: 4px;
   }
 }
 
 .footer-inline:last-child {
   float: right;
-  margin-right: -30px;
+  margin-right: -28px;
 }
 .social-bar-wrap {
   margin-top: 3px;
   a {
-    padding-right: 12px;
+    padding-right: 11px;
   }
+
   a:last-child {
     padding-right: 0;
   }
@@ -513,6 +537,7 @@ div#copyright {
   h1 {
     padding-top: 160px;
     padding-bottom: 33px;
+    padding-left: 2px;
     line-height: 1em;
     letter-spacing: 0.025em;
     width: 720px;
@@ -520,6 +545,7 @@ div#copyright {
 
   h2 {
     font-size: 30px;
+    margin-left: 2px;
   }
 
   #header .request-call {
@@ -533,6 +559,11 @@ div#copyright {
     width: 480px;
     margin: 0 auto;
     margin-top: 5px;
+    padding-left: 2px;
+
+    & span {
+      margin-left: 7px;
+    }
   }
 
   div#about-us {
@@ -584,7 +615,7 @@ div#copyright {
       width: 377px;
       letter-spacing: 0.04em;
     }
-    .request-call {
+    .request-call, h2 {
       margin-left: 2px;
     }
   }
@@ -601,6 +632,17 @@ div#copyright {
 
   .w-proccess {
     margin: 28px 25px 119px 0px;
+    &:nth-child(3) {
+      margin-left: -2px;
+      margin-right: 27px;
+    }
+    &:nth-last-child(2) {
+     margin-right: 23px;
+     }
+    &:last-child {
+      margin-right: -3px;
+      margin-left: 3px;
+    }
   }
 
   div.block2 {
@@ -609,25 +651,31 @@ div#copyright {
 
   div#work-proccess {
     font-size: 13px;
-    letter-spacing: 0.04em;
-    padding-top: 35px;
+    padding-top: 36px;
 
     h2,
-    p {
-      margin-left: 2px;
+    p.text-dark {
+      margin-left: 3px;
     }
 
     h2 {
       margin-bottom: 24px;
+    }
+   p.text-dark {
+      letter-spacing: 0.04em;
+      margin-left: 3px;
     }
   }
 
   h2#our-works {
     margin-top: 67px;
     margin-bottom: 35px;
+    letter-spacing: 0.25px;
+    margin-left: 2px;
   }
 
   div#reviews {
+    background-image: url("/images/tablet/review-bg.png");
     height: 620px;
     h2 {
       display: none;
@@ -657,6 +705,16 @@ div#copyright {
     h3 {
       margin-left: 1px;
     }
+    h3 {
+      font-weight: 700;
+    }
+  }
+
+  div#reviews h3 {
+    font-size: 1.11em;
+    margin-top: 24px;
+    padding-bottom: 3px;
+    letter-spacing: 0.02em;
   }
 
   div#r-col-2 {
@@ -666,10 +724,6 @@ div#copyright {
     h3 {
       margin-left: 16px;
     }
-  }
-
-  div#reviews h3 {
-    letter-spacing: 0.06em;
   }
 
   div#clients-block {
@@ -899,10 +953,15 @@ div#copyright {
 
   .text#p-header {
     line-height: 1.6em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     opacity: 1;
     margin-top: 10px;
     font-weight: 700;
+    width: 285px;
+    padding-left: 0;
+    span {
+      margin-left: 0;
+    }
   }
 
   .container {
@@ -961,6 +1020,14 @@ div#copyright {
     margin-top: 46px;
   }
 
+  .menu__icon {
+    border: 2px solid #9693b5;
+  span {
+    width: 18px;
+    left: 27%;
+  }
+}
+
   div#ubout-us-img {
     width: 320px;
     height: 344px;
@@ -1011,6 +1078,17 @@ div#copyright {
     &:nth-child(6) {
       margin-right: 0;
     }
+    &:nth-child(3) {
+      margin-left: 0px;
+  }
+  &:nth-child(3) {
+    margin-right: 15px;
+    margin-left: -3px;
+  }
+  &:nth-last-child(2) {
+     margin-right: 12px;
+  }
+
   }
 
   div.block2 {
@@ -1050,8 +1128,10 @@ div#copyright {
     h3 {
       font-size: 18px;
       font-weight: 900;
+      font-family: inherit;
       letter-spacing: 0.08em;
       margin-top: 33px;
+      padding-bottom: 0;
     }
     .text-small {
       line-height: 2.2em;
@@ -1189,7 +1269,7 @@ div#copyright {
     h3 {
       margin-top: 53px;
       margin-bottom: 28px;
-      letter-spacing: 0.61px;
+      letter-spacing: 0.5px;
     }
     input {
       width: 232px;
