@@ -25,7 +25,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #000;
   line-height: 28.01px;
-  width: 1920px;
+  min-width: 1120px;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -483,10 +483,16 @@ div#copyright {
 }
 
 /* media */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1190px) {
+  .footer-inline:last-child {
+    float: right;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 1125px) {
   html,
   body {
-    width: 1020px;
+    min-width: 930px;
   }
 
   .container {
@@ -570,7 +576,8 @@ div#copyright {
     width: 377px;
     letter-spacing: 0.04em;
   }
-  div.aside .request-call, div.aside h2 {
+  div.aside .request-call,
+  div.aside h2 {
     margin-left: 2px;
   }
 
@@ -759,7 +766,8 @@ div#copyright {
     height: 70px;
     width: 344px;
   }
-  #contacts_message input, #contacts_message textarea {
+  #contacts_message input,
+  #contacts_message textarea {
     padding: 22px 20px 20px 18px;
     opacity: 1;
   }
@@ -858,7 +866,79 @@ div#copyright {
     margin-right: 89px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 930px) {
+  html,
+  body {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 96%;
+  }
+
+  div#ubout-us-img,
+  div.aside {
+    width: 47%;
+  }
+
+  div.aside p, div#reviews p.rev-text {
+    width: 90%;
+  }
+
+  div.menu__icon {
+    left: 95%;
+  }
+
+  #work-proccess img {
+    width: calc(25% - 25px);
+    height: calc(25% - 25px);
+  }
+
+  #our-works-block img {
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+  }
+
+  #our-works-block, #sky-realstate-footer {
+    height: 100%;
+  }
+
+  div.rev-col-1 {
+    width: 50%;
+  }
+
+  div.container .clients-img img {
+    width: calc(25% - 25px);
+  }
+
+  .contacts_layer, .contacts_layer, div#contacts_details {
+    width: calc(100% - 475px);
+  }
+
+  div.contact_details_block {
+    padding: 33px 10px 34px 30px;
+  }
+  div.contact_details_block p {
+    width: 100%;
+  }
+
+  div#contacts_details h3 {
+    margin-bottom: 5px;
+  }
+
+  .footer-inline:last-child {
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  #menu-footer {
+    margin-right: 0px;
+  }
+  #menu-footer li {
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
   div#header .request-call, div.aside .request-call {
     letter-spacing: 0.02em;
     font: 700 1.2em Montserrat;
@@ -870,7 +950,7 @@ div#copyright {
     font: 400 13px Lato;
     font-family: "Lato", sans-serif;
     color: #000;
-    width: 320px;
+    min-width: 320px;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -911,6 +991,7 @@ div#copyright {
 
   div#header {
     height: 640px;
+    background-size: cover;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/header-bg.png");
   }
 
@@ -1049,6 +1130,7 @@ div#copyright {
   div#reviews {
     height: 620px;
     margin-top: -53px;
+    background-size: cover;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/review-bg.png");
     margin-bottom: 168px;
   }

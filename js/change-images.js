@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(4)").attr("src", "images/tablet/google.png");
   }
 
-  if (windowSize <= 320) {
+  if (windowSize <= 767) {
     for (i = 1; i <= 4; i++) {
       $("#work-process-" + i).attr(
         "src",

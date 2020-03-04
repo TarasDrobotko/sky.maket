@@ -28,7 +28,8 @@ body {
   font-family: "Lato", sans-serif;
   color: #000;
   line-height: 28.01px;
-  width: 1920px;
+  //width: 1920px;
+  min-width: 1120px;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -134,7 +135,6 @@ div.aside {
   p {
     width: 455px;
     letter-spacing: 0.006em;
-
   }
 }
 
@@ -153,11 +153,10 @@ nav #menu {
 .w-proccess {
   margin: 81px 25px 119px 0px;
 
-&:last-child {
-  margin-right: -5px;
-  margin-left: 6px;
-
-}
+  &:last-child {
+    margin-right: -5px;
+    margin-left: 6px;
+  }
 }
 
 div#work-proccess {
@@ -277,7 +276,7 @@ div.rev-col-1 {
     margin-top: 25px;
     margin-bottom: 35px;
     letter-spacing: 0.006em;
-      opacity: 90%;
+    opacity: 90%;
   }
 
   h3 {
@@ -524,10 +523,18 @@ div#copyright {
 
 /* media */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1190px) {
+  .footer-inline:last-child {
+    float: right;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
   html,
   body {
-    width: 1020px;
+    min-width: 930px;
+    //width: 1020px;
   }
 
   .container {
@@ -615,7 +622,8 @@ div#copyright {
       width: 377px;
       letter-spacing: 0.04em;
     }
-    .request-call, h2 {
+    .request-call,
+    h2 {
       margin-left: 2px;
     }
   }
@@ -637,8 +645,8 @@ div#copyright {
       margin-right: 27px;
     }
     &:nth-last-child(2) {
-     margin-right: 23px;
-     }
+      margin-right: 23px;
+    }
     &:last-child {
       margin-right: -3px;
       margin-left: 3px;
@@ -661,7 +669,7 @@ div#copyright {
     h2 {
       margin-bottom: 24px;
     }
-   p.text-dark {
+    p.text-dark {
       letter-spacing: 0.04em;
       margin-left: 3px;
     }
@@ -819,7 +827,8 @@ div#copyright {
       width: 344px;
     }
 
-    input, textarea {
+    input,
+    textarea {
       padding: 22px 20px 20px 18px;
       opacity: 1;
     }
@@ -920,7 +929,78 @@ div#copyright {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 930px) {
+  html,
+  body {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 96%;
+  }
+
+  div#ubout-us-img,
+  div.aside {
+    width: 47%;
+  }
+
+  div.aside p, div#reviews p.rev-text {
+    width: 90%;
+  }
+
+  div.menu__icon {
+    left: 95%;
+  }
+  #work-proccess img {
+    width: calc(25% - 25px);
+    height: calc(25% - 25px);
+  }
+  #our-works-block img {
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+  }
+
+  #our-works-block, #sky-realstate-footer {
+    height: 100%;
+  }
+
+  div.rev-col-1 {
+    width:  50%;
+  }
+
+  div.container .clients-img img {
+    width: calc(25% - 25px);
+  }
+
+  .contacts_layer, .contacts_layer, div#contacts_details  {
+    width: calc(100% - 475px);
+  }
+
+  div.contact_details_block {
+   padding: 33px 10px 34px 30px;
+  p {
+    width: 100%;
+  }
+}
+
+div#contacts_details h3 {
+  margin-bottom: 5px;
+}
+
+.footer-inline:last-child {
+  float: none;
+  margin-bottom: 15px;
+}
+
+#menu-footer {
+  margin-right: 0px;
+  li {
+    padding-right: 20px;
+  }
+}
+}
+
+@media only screen and (max-width: 767px) {
   %request-call-mob {
     letter-spacing: 0.02em;
     font: 700 1.2em Montserrat;
@@ -932,7 +1012,8 @@ div#copyright {
     font: 400 13px Lato;
     font-family: "Lato", sans-serif;
     color: #000;
-    width: 320px;
+    //width: 320px;
+    min-width: 320px;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -972,6 +1053,7 @@ div#copyright {
 
   div#header {
     height: 640px;
+    background-size: cover;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/header-bg.png");
   }
 
@@ -1022,11 +1104,11 @@ div#copyright {
 
   .menu__icon {
     border: 2px solid #9693b5;
-  span {
-    width: 18px;
-    left: 27%;
+    span {
+      width: 18px;
+      left: 27%;
+    }
   }
-}
 
   div#ubout-us-img {
     width: 320px;
@@ -1080,15 +1162,14 @@ div#copyright {
     }
     &:nth-child(3) {
       margin-left: 0px;
-  }
-  &:nth-child(3) {
-    margin-right: 15px;
-    margin-left: -3px;
-  }
-  &:nth-last-child(2) {
-     margin-right: 12px;
-  }
-
+    }
+    &:nth-child(3) {
+      margin-right: 15px;
+      margin-left: -3px;
+    }
+    &:nth-last-child(2) {
+      margin-right: 12px;
+    }
   }
 
   div.block2 {
@@ -1119,6 +1200,7 @@ div#copyright {
   div#reviews {
     height: 620px;
     margin-top: -53px;
+    background-size: cover;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/review-bg.png");
     margin-bottom: 168px;
   }
@@ -1188,8 +1270,6 @@ div#copyright {
     background: #fff;
     opacity: 1;
   }
-
-
 
   div#clients-block {
     height: 480px;
@@ -1261,7 +1341,6 @@ div#copyright {
       margin-left: 0px;
       margin-right: 10px;
       line-height: 1.8em;
-
     }
   }
   #contacts_message {
@@ -1355,4 +1434,3 @@ div#copyright {
     text-align: center;
   }
 }
-
