@@ -173,6 +173,14 @@ ul#menu {
   list-style: none;
 }
 
+nav #menu a:hover {
+  color: #d7d7d7;
+}
+
+#menu-footer a:hover {
+  color: #5c5c5c;
+}
+
 #logo {
   color: #ffffff;
   float: left;
@@ -204,8 +212,11 @@ footer-info {
 }
 
 .request-call {
+  display: block;
+  text-align: center;
   width: 202px;
-  height: 46px;
+  height: 36px;
+  padding-top: 10px;
   background-color: #1a0c47;
   color: #ffffff;
   border-style: none;
@@ -214,9 +225,15 @@ footer-info {
   letter-spacing: 0.02em;
 }
 
+.request-call:hover,
+#contacts_message input.request-call:hover {
+  background-color: #2b1c5d;
+}
+
 div#header .request-call {
+  margin: 0 auto;
   margin-top: 55px;
-  padding: 0 0 3px 0;
+  padding: 10px 0 3px 0;
 }
 
 .works:nth-child(4) {
@@ -371,9 +388,8 @@ div#r-col-2 h3 {
   height: 8px;
 }
 #contacts_message input.request-call {
-  margin-top: -5px;
+  margin: -5px 0 10px 0;
   width: 202px;
-  margin-bottom: 10px;
   height: 46px;
   border: none;
   background-color: #1a0c47;
@@ -474,6 +490,30 @@ div.container .clients-img:last-child {
   padding-right: 0;
 }
 
+.svg-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #9c95b0;
+}
+
+.social-dark path {
+  fill: #9b9b9b;
+}
+
+.svg-icon path:hover, .social-dark path:hover {
+  fill: #595368;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
 div#copyright {
   height: 31px;
   color: #171717;
@@ -514,7 +554,6 @@ div#copyright {
   }
 
   #header .request-call {
-    margin-left: 3px;
     margin-top: 55px;
     letter-spacing: 0.02em;
     font: 700 1em Montserrat;
@@ -881,7 +920,8 @@ div#copyright {
     width: 47%;
   }
 
-  div.aside p, div#reviews p.rev-text {
+  div.aside p,
+  div#reviews p.rev-text {
     width: 90%;
   }
 
@@ -899,7 +939,8 @@ div#copyright {
     height: calc(50% - 25px);
   }
 
-  #our-works-block, #sky-realstate-footer {
+  #our-works-block,
+  #sky-realstate-footer {
     height: 100%;
   }
 
@@ -911,7 +952,9 @@ div#copyright {
     width: calc(25% - 25px);
   }
 
-  .contacts_layer, .contacts_layer, div#contacts_details {
+  .contacts_layer,
+  .contacts_layer,
+  div#contacts_details {
     width: calc(100% - 475px);
   }
 
@@ -1035,7 +1078,6 @@ div#copyright {
   }
 
   div#header .request-call {
-    margin-left: 0;
     margin-top: 46px;
   }
 
@@ -1072,8 +1114,7 @@ div#copyright {
   }
   div.aside .request-call {
     position: relative;
-    margin-top: 36px;
-    left: -15px;
+    margin: 36px auto 0  auto;
   }
 
   div#work-proccess img {
@@ -1306,7 +1347,7 @@ div#copyright {
     margin-bottom: 20px;
   }
 
-  input.request-call {
+  #contacts_message input.request-call {
     margin-left: 28px;
     margin-top: -5px;
     margin-bottom: 10px;
@@ -1344,13 +1385,13 @@ div#copyright {
 
   .social-bar-wrap {
     margin-top: 8px;
+    padding-left: 30px;
   }
   .social-bar-wrap a {
     padding-right: 11px;
   }
 
-  .footer-inline:last-child {
-    float: none;
+  .footer-inline {
     display: block;
   }
 
