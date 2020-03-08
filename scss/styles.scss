@@ -28,7 +28,6 @@ body {
   font-family: "Lato", sans-serif;
   color: #000;
   line-height: 28.01px;
-  //width: 1920px;
   min-width: 1120px;
   margin: 0px;
   padding: 0px;
@@ -194,7 +193,7 @@ ul#menu {
 }
 
 nav #menu a:hover {
-color: #d7d7d7;
+  color: #d7d7d7;
 }
 
 #menu-footer a:hover {
@@ -235,7 +234,6 @@ footer-info {
 .request-call {
   display: block;
   text-align: center;
-  //margin: 0 auto;
   width: 202px;
   height: 36px;
   padding-top: 10px;
@@ -530,7 +528,6 @@ div.container .clients-img:last-child {
   }
 }
 
-
 .svg-icon {
   width: 1.2em;
   height: 1.2em;
@@ -539,14 +536,15 @@ div.container .clients-img:last-child {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-    fill: #9c95b0;
+  fill: #9c95b0;
 }
 .social-dark path {
   fill: #9b9b9b;
 }
 
-.svg-icon path:hover, .social-dark path:hover {
-fill: #595368;
+.svg-icon path:hover,
+.social-dark path:hover {
+  fill: #595368;
 }
 
 .svg-icon circle {
@@ -575,7 +573,6 @@ div#copyright {
   html,
   body {
     min-width: 930px;
-    //width: 1020px;
   }
 
   .container {
@@ -904,6 +901,29 @@ div#copyright {
     margin-left: 30px;
   }
 
+  nav #menu.active {
+    width: 160px;
+    text-align: center;
+    float: right;
+    margin-top: -5px;
+    & li:last-child {
+      margin-right: 0;
+    }
+    li.visibility {
+      padding-right: 0;
+      display: block;
+      width: 100%;
+      background-color: #314286a9;
+    
+    &:first-child {
+      padding-top: 15px;
+    }
+    &:nth-last-child(2) {
+      padding-bottom: 15px;
+    }
+  }
+  }
+
   #sky-realstate-footer {
     height: 72px;
   }
@@ -1056,7 +1076,6 @@ div#copyright {
     font: 400 13px Lato;
     font-family: "Lato", sans-serif;
     color: #000;
-    //width: 320px;
     min-width: 320px;
     margin: 0px;
     padding: 0px;
@@ -1134,6 +1153,13 @@ div#copyright {
   div#header nav {
     padding-top: 14px;
   }
+  nav #menu.active {
+    margin-top: -30px;
+    margin-right: 15px;
+    & li:last-child {
+      margin: 0;
+    }
+  }
 
   nav #menu li:last-child {
     margin: 23px 89px 0 -29px;
@@ -1179,8 +1205,7 @@ div#copyright {
     .request-call {
       position: relative;
       @extend %request-call-mob;
-      margin: 36px auto 0  auto;
-    
+      margin: 36px auto 0 auto;
     }
   }
 
