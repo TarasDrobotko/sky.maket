@@ -370,10 +370,12 @@ div#r-col-2 h3 {
   color: #ffffff;
   opacity: 0.8;
 }
+
 #contacts_message ::placeholder {
   color: #ffffff;
   opacity: 0.8;
 }
+
 #contacts_message textarea {
   line-height: 0.5em;
   resize: none;
@@ -381,6 +383,7 @@ div#r-col-2 h3 {
   height: 99px;
   width: 438px;
 }
+
 #contacts_message input {
   display: block;
   width: 438px;
