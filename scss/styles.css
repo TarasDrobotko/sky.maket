@@ -109,8 +109,8 @@ div#about-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: left;
 }
 
@@ -126,8 +126,7 @@ div#our-works-block {
 
 div.aside {
   width: 540px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  padding-top: 50px;
 }
 div.aside p {
   width: 455px;
@@ -253,7 +252,7 @@ footer-info {
 div#header .request-call {
   margin: 0 auto;
   margin-top: 55px;
-  padding: 10px 0 3px 0;
+  padding-top: 10px;
 }
 
 .works:nth-child(4) {
@@ -509,7 +508,6 @@ div.container .clients-img:last-child {
 }
 #menu-footer li:last-child {
   padding-right: 0px;
-  padding-left: 4px;
 }
 
 .social-bar-wrap {
@@ -638,6 +636,9 @@ div#copyright {
     width: 377px;
     letter-spacing: 0.04em;
   }
+  div.aside .request-call {
+    margin-top: 50px;
+  }
   div.aside .request-call,
   div.aside h2 {
     margin-left: 2px;
@@ -735,6 +736,9 @@ div#copyright {
     letter-spacing: 0.02em;
   }
 
+  div#r-col-2 {
+    margin-left: 0;
+  }
   div#r-col-2 p.rev-text,
   div#r-col-2 img,
   div#r-col-2 .text-small,
@@ -900,7 +904,7 @@ div#copyright {
   }
 
   .social-bar-wrap a {
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
   div#copyright {
@@ -956,7 +960,6 @@ div#copyright {
   }
 
   #sky-realstate-footer div.container .footer-inline:last-child {
-    margin-left: 20px;
     margin-right: 0;
   }
 }
@@ -981,7 +984,7 @@ div#copyright {
   }
 
   div.menu__icon {
-    left: 95%;
+    left: 85%;
   }
 
   #work-proccess img {
@@ -1033,6 +1036,10 @@ div#copyright {
 
   .footer-inline:last-child {
     margin-bottom: 15px;
+  }
+
+  div.menu__icon {
+    left: 95%;
   }
 
   #menu-footer {
@@ -1117,7 +1124,6 @@ div#copyright {
   }
 
   .menu__icon {
-    left: 245px;
     top: 14px;
   }
 
@@ -1161,7 +1167,7 @@ div#copyright {
 
   div#about-us {
     padding-bottom: 50px;
-    padding-top: 36px;
+    padding-top: 0;
   }
 
   div#ubout-us-img {
@@ -1460,7 +1466,6 @@ div#copyright {
 
   .social-bar-wrap {
     margin-top: 8px;
-    margin-left: -30px;
   }
   .social-bar-wrap a {
     padding-right: 11px;
@@ -1468,6 +1473,10 @@ div#copyright {
 
   #menu-footer li:last-child {
     padding-left: 0;
+  }
+
+  #sky-realstate-footer div.container .footer-inline:last-child {
+    margin-left: -30px;
   }
 
   div#copyright {
