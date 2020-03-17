@@ -1015,9 +1015,6 @@ div#copyright {
     width: 90%;
   }
 
-  div.menu__icon {
-    left: 85%;
-  }
   #work-proccess img {
     width: calc(25% - 20px);
     height: calc(25% - 20px);
@@ -1136,8 +1133,11 @@ div#copyright {
     font-family: Montserrat;
     font-size: 24px;
     letter-spacing: 0.4px;
+    .aside & {
+      width: 100%;
+    }
     &#our-works {
-      margin-top: 53px;
+      margin-top: 50px;
     }
     &#clients {
       font-size: 24px;
@@ -1147,8 +1147,8 @@ div#copyright {
     }
   }
 
-  .menu__icon {
-   
+  div.menu__icon {
+    left: 85%;
     top: 14px;
   }
 
@@ -1191,30 +1191,36 @@ div#copyright {
   }
 
   div#about-us {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     padding-top: 0;
+    flex-direction: column-reverse;
   }
   div#ubout-us-img {
-    display: none;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    height: 343px;
   }
 
   div.aside {
-    width: 320px;
+    width: 290px;
     text-align: center;
+    padding-top: 33px;
 
     p {
-      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 27px;
       line-height: 1.6em;
     }
     .request-call {
       position: relative;
       @extend %request-call-mob;
-      margin: 36px auto 0 auto;
+      margin: 46px auto 50px auto;
     }
   }
 
   div#work-proccess {
+    padding-top: 33px;
     #w-process-img {
       flex-wrap: wrap;
     }
@@ -1256,7 +1262,7 @@ div#copyright {
 
   div#our-works-block {
     flex-direction: column;
-    height: 1496px;
+    padding-bottom: 50px;
     h2#our-works {
       margin-bottom: 45px;
       width: 100%;
@@ -1267,13 +1273,12 @@ div#copyright {
     img {
       width: 320px;
       height: 300px;
-      margin: 0 0 15px -15px;
+      margin: 0 0 20px -15px;
     }
   }
 
   div#reviews {
     height: 620px;
-    margin-top: -53px;
     background-size: cover;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/review-bg.png");
   }
@@ -1418,7 +1423,9 @@ div#copyright {
     }
   }
   #contacts_message {
+    width: calc(100% - 30px);
     padding-left: 14px;
+    padding-right: 14px;
     h3 {
       margin-top: 53px;
       margin-bottom: 28px;
@@ -1478,6 +1485,7 @@ div#copyright {
   }
 
   #footer-logo {
+    margin-right: 0;
     font-size: 16px;
     margin-bottom: 15px;
   }
@@ -1501,7 +1509,8 @@ div#copyright {
   }
 
   #sky-realstate-footer div.container .footer-inline:last-child {
-      margin-left: -30px;
+      margin-left: auto;
+      margin-right: auto;
   }
 
   div#copyright {
