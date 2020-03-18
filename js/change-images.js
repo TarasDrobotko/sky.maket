@@ -1,8 +1,27 @@
-var SITEURL = document.location.origin+'/';
+var SITEURL = document.location.origin + "/";
 
 $(document).ready(function() {
   windowSize = document.documentElement.clientWidth;
   if (windowSize <= 1024) {
+    function resizeProcessBlocks() {
+      var $el = $(".w-process");
+      var elWidth = $el.outerWidth();
+      $el.css("height", elWidth);
+    }
+
+    resizeProcessBlocks();
+
+    $(window).resize(function() { 
+      $.ajax({
+        url: SITEURL,
+        method: "POST",
+        data: {},
+        success: function(data) {
+          resizeProcessBlocks();
+        }
+      });
+    });
+
     for (i = 1; i <= 4; i++) {
       $("#work-process-" + i).attr(
         "src",
@@ -46,28 +65,26 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(2)").attr("src", "images/mobile/samsung.png");
     $(".clients-img img:nth-child(3)").attr("src", "images/mobile/ibm.png");
     $(".clients-img img:nth-child(4)").attr("src", "images/mobile/google.png");
-   
-    if( $("#r-col-2").css('display') == 'none') {
-     $('#tab1').prop('checked', true);
-    }
-    $("label.radio").click(function(){  
 
-      $.ajax({ 
-           url: SITEURL,  
-           method:"POST",  
-           data:{},  
-           success:function(data){  
-          
-            if($('#tab1').is(':checked')) {
-                $("#r-col-1").css("display", "block");
-                $("#r-col-2").css("display", "none");
-              } else if ($('#tab2').is(':checked')){
-                $("#r-col-2").css("display", "block");
-                $("#r-col-1").css("display", "none");
-                $("#r-col-2").css("margin-left", "0");
-              }
-           }  
-      });  
- });  
+    if ($("#r-col-2").css("display") == "none") {
+      $("#tab1").prop("checked", true);
+    }
+    $("label.radio").click(function() {
+      $.ajax({
+        url: SITEURL,
+        method: "POST",
+        data: {},
+        success: function(data) {
+          if ($("#tab1").is(":checked")) {
+            $("#r-col-1").css("display", "block");
+            $("#r-col-2").css("display", "none");
+          } else if ($("#tab2").is(":checked")) {
+            $("#r-col-2").css("display", "block");
+            $("#r-col-1").css("display", "none");
+            $("#r-col-2").css("margin-left", "0");
+          }
+        }
+      });
+    });
   }
 });

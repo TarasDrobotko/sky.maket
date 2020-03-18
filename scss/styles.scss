@@ -82,6 +82,7 @@ h1 {
 }
 
 h2 {
+  width: 100%;
   color: #333333;
   font-family: Montserrat;
   font-size: 40px;
@@ -157,7 +158,13 @@ div#w-process-img {
   justify-content: space-between;
 }
 
-.w-proccess {
+.w-process {
+  text-transform: uppercase;
+  @extend %font;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  width: 255px;
+  height: 255px;
   margin-top: 81px;
   margin-bottom: 119px;
 
@@ -165,9 +172,56 @@ div#w-process-img {
     margin-right: -5px;
     margin-left: 6px;
   }
+
+  &.w-process-blue {
+    background-color: #170447;
+  }
+
+  &.w-process-dark {
+    background-color: #101010;
+  }
+  
+  span, strong {
+    display: block;
+    position: relative;
+  }
+  span {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    background-image:url('/images/sprites.png');
+    
+  }
+  strong {
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  #w-process-call {
+    background-position: -5px -105px;
+    width: 37px;
+   	height: 37px;
+  }
+
+  #w-process-measure {
+    background-position: -60px -102px ;
+	  width: 35px;
+	  height: 39px;
+  }
+
+  #w-process-plan {
+    background-position: -106px -105px ;
+  	width: 42px;
+	  height: 39px;
+  }
+
+  #w-process-work {
+    background-position: -150px -105px ;
+    width: 48px;
+    height: 40px;
+  }
 }
 
-div#work-proccess {
+div#work-process {
   padding-top: 50px;
   h2 {
     margin-bottom: 40px;
@@ -233,6 +287,10 @@ div#header {
 div#contacts {
   background-image: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png");
   height: 860px;
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  }
 }
 
 footer-info {
@@ -353,28 +411,29 @@ div#r-col-2 {
   letter-spacing: 0;
 }
 
-#contacts_layer {
-  position: relative;
-  top: -35px;
-  width: 540px;
-  height: 600px;
-  background-color: #ffffff;
-  opacity: 0.04;
-  margin-bottom: -600px;
-}
+// #contacts_layer {
+//   position: relative;
+//   top: -35px;
+//   width: 540px;
+//   height: 600px;
+//   background-color: #ffffff;
+//   opacity: 0.04;
+//   margin-bottom: -600px;
+// }
 
-.contacts_layer {
-  position: relative;
-  height: 180px;
-  width: 540px;
-  top: -35px;
-  left: 570px;
-  background-color: #ffffff;
-  opacity: 0.04;
-  margin-bottom: 30px;
-}
+// .contacts_layer {
+//   position: relative;
+//   height: 180px;
+//   width: 540px;
+//   top: -35px;
+//   left: 570px;
+//   background-color: #ffffff;
+//   opacity: 0.04;
+//   margin-bottom: 30px;
+// }
 
 #contacts_message {
+  background-color: rgba(255, 255, 255, 0.04);
   position: relative;
   top: 0;
   z-index: 2;
@@ -622,7 +681,8 @@ div#copyright {
     width: 445px;
     height: 390px;
     margin: 0 30px 0 0;
-    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png");
+    background-size: cover;
+    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png") 100% 100% no-repeat;
   }
   div#our-works-block {
     padding-bottom: 0;
@@ -666,12 +726,12 @@ div#copyright {
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png");
   }
 
-  #work-proccess img {
+  #work-process img {
     width: 208px;
     height: 208px;
   }
 
-  .w-proccess {
+  .w-process {
     margin: 28px 25px 119px 0px;
     &:nth-child(3) {
       margin-left: -2px;
@@ -689,7 +749,7 @@ div#copyright {
     height: 458px;
   }
 
-  div#work-proccess {
+  div#work-process {
     font-size: 13px;
     padding-top: 36px;
 
@@ -1015,9 +1075,9 @@ div#copyright {
     width: 90%;
   }
 
-  #work-proccess img {
-    width: calc(25% - 20px);
-    height: calc(25% - 20px);
+  #work-process .w-process {
+    max-width: calc(25% - 20px);
+    
   }
   div#our-works-block img {
     width: calc(50% - 15px);
@@ -1197,6 +1257,7 @@ div#copyright {
   }
   div#ubout-us-img {
     margin-left: -15px;
+    margin-right: 0;
     width: calc(100% + 30px);
     height: 343px;
   }
@@ -1219,14 +1280,23 @@ div#copyright {
     }
   }
 
-  div#work-proccess {
+  div#work-process {
     padding-top: 33px;
     #w-process-img {
       flex-wrap: wrap;
     }
-    img {
-      width: 135px;
-      height: 135px;
+    .w-process {
+      max-width: calc(50% - 10px);
+      span {
+        transform:scale(0.75) !important;
+        left: 35%;
+        top: 20%;
+      }
+      strong {
+        font-size: 14px;
+        top: 40%; 
+        transform: translateY(-40%);
+      }
       &:first-child,
       &:nth-child(2) {
         margin-top: 14px;
@@ -1240,7 +1310,7 @@ div#copyright {
     }
   }
 
-  .w-proccess {
+  .w-process {
     margin: 20px 0px 0 -2px;
 
     &:nth-last-child(2) {
@@ -1371,6 +1441,8 @@ div#copyright {
   }
 
   div#contacts {
+    flex-direction: column;
+    justify-content: center;
     margin-left: 0;
     height: 1195px;
     h2 {
@@ -1380,20 +1452,20 @@ div#copyright {
     }
   }
 
-  #contacts_layer {
-    width: 290px;
-    height: 487px;
-    margin-bottom: -487px;
-    margin-left: 1px;
-    top: -43px;
-  }
+  // #contacts_layer {
+  //   width: 290px;
+  //   height: 487px;
+  //   margin-bottom: -487px;
+  //   margin-left: 1px;
+  //   top: -43px;
+  // }
 
   div#contacts_details {
     width: 290px;
     height: 487px;
     left: 0px;
     text-align: left;
-    margin-bottom: -487px;
+    //margin-bottom: -487px;
     top: 482px;
 
     h3 {
@@ -1426,6 +1498,7 @@ div#copyright {
     width: calc(100% - 30px);
     padding-left: 14px;
     padding-right: 14px;
+    background-color: rgba(255, 255, 255, 0.04);
     h3 {
       margin-top: 53px;
       margin-bottom: 28px;
@@ -1445,20 +1518,21 @@ div#copyright {
     }
   }
 
-  .details.contacts_layer {
-    height: 160px;
-    width: 290px;
-    top: 485px;
-    left: 0px;
-    background-color: #ffffff;
-    opacity: 0.04;
-    margin-bottom: 20px;
-  }
+  // .details.contacts_layer {
+  //   height: 160px;
+  //   width: 290px;
+  //   top: 485px;
+  //   left: 0px;
+  //   background-color: #ffffff;
+  //   opacity: 0.04;
+  //   margin-bottom: 20px;
+  // }
 
   div.contact_details_block {
     padding: 38px 15px 20px 15px;
     height: 102px;
     margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   #contacts_message input.request-call {

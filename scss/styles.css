@@ -1,4 +1,4 @@
-nav #menu, #menu-footer, h3.reviews-header, .request-call, #contacts_message input.request-call {
+nav #menu, #menu-footer, .w-process, h3.reviews-header, .request-call, #contacts_message input.request-call {
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 700;
@@ -78,6 +78,7 @@ h1 {
 }
 
 h2 {
+  width: 100%;
   color: #333333;
   font-family: Montserrat;
   font-size: 40px;
@@ -149,22 +150,69 @@ div#w-process-img {
           justify-content: space-between;
 }
 
-.w-proccess {
+.w-process {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  width: 255px;
+  height: 255px;
   margin-top: 81px;
   margin-bottom: 119px;
 }
-.w-proccess:last-child {
+.w-process:last-child {
   margin-right: -5px;
   margin-left: 6px;
 }
+.w-process.w-process-blue {
+  background-color: #170447;
+}
+.w-process.w-process-dark {
+  background-color: #101010;
+}
+.w-process span, .w-process strong {
+  display: block;
+  position: relative;
+}
+.w-process span {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  background-image: url("/images/sprites.png");
+}
+.w-process strong {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.w-process #w-process-call {
+  background-position: -5px -105px;
+  width: 37px;
+  height: 37px;
+}
+.w-process #w-process-measure {
+  background-position: -60px -102px;
+  width: 35px;
+  height: 39px;
+}
+.w-process #w-process-plan {
+  background-position: -106px -105px;
+  width: 42px;
+  height: 39px;
+}
+.w-process #w-process-work {
+  background-position: -150px -105px;
+  width: 48px;
+  height: 40px;
+}
 
-div#work-proccess {
+div#work-process {
   padding-top: 50px;
 }
-div#work-proccess h2 {
+div#work-process h2 {
   margin-bottom: 40px;
 }
-div#work-proccess p.text-dark {
+div#work-process p.text-dark {
   letter-spacing: 0.005em;
   margin-left: 2px;
 }
@@ -223,6 +271,13 @@ div#header nav {
 div#contacts {
   background-image: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png");
   height: 860px;
+}
+div#contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer-info {
@@ -338,28 +393,8 @@ div#r-col-2 h3 {
   letter-spacing: 0;
 }
 
-#contacts_layer {
-  position: relative;
-  top: -35px;
-  width: 540px;
-  height: 600px;
-  background-color: #ffffff;
-  opacity: 0.04;
-  margin-bottom: -600px;
-}
-
-.contacts_layer {
-  position: relative;
-  height: 180px;
-  width: 540px;
-  top: -35px;
-  left: 570px;
-  background-color: #ffffff;
-  opacity: 0.04;
-  margin-bottom: 30px;
-}
-
 #contacts_message {
+  background-color: rgba(255, 255, 255, 0.04);
   position: relative;
   top: 0;
   z-index: 2;
@@ -605,7 +640,8 @@ div#copyright {
     width: 445px;
     height: 390px;
     margin: 0 30px 0 0;
-    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png");
+    background-size: cover;
+    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png") 100% 100% no-repeat;
   }
 
   div#our-works-block {
@@ -649,22 +685,22 @@ div#copyright {
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png");
   }
 
-  #work-proccess img {
+  #work-process img {
     width: 208px;
     height: 208px;
   }
 
-  .w-proccess {
+  .w-process {
     margin: 28px 25px 119px 0px;
   }
-  .w-proccess:nth-child(3) {
+  .w-process:nth-child(3) {
     margin-left: -2px;
     margin-right: 27px;
   }
-  .w-proccess:nth-last-child(2) {
+  .w-process:nth-last-child(2) {
     margin-right: 23px;
   }
-  .w-proccess:last-child {
+  .w-process:last-child {
     margin-left: 3px;
   }
 
@@ -672,18 +708,18 @@ div#copyright {
     height: 458px;
   }
 
-  div#work-proccess {
+  div#work-process {
     font-size: 13px;
     padding-top: 36px;
   }
-  div#work-proccess h2,
-  div#work-proccess p.text-dark {
+  div#work-process h2,
+  div#work-process p.text-dark {
     margin-left: 3px;
   }
-  div#work-proccess h2 {
+  div#work-process h2 {
     margin-bottom: 24px;
   }
-  div#work-proccess p.text-dark {
+  div#work-process p.text-dark {
     letter-spacing: 0.04em;
     margin-left: 3px;
   }
@@ -983,9 +1019,8 @@ div#copyright {
     width: 90%;
   }
 
-  #work-proccess img {
-    width: calc(25% - 20px);
-    height: calc(25% - 20px);
+  #work-process .w-process {
+    max-width: calc(25% - 20px);
   }
 
   div#our-works-block img {
@@ -1176,6 +1211,7 @@ div#copyright {
 
   div#ubout-us-img {
     margin-left: -15px;
+    margin-right: 0;
     width: calc(100% + 30px);
     height: 343px;
   }
@@ -1196,34 +1232,45 @@ div#copyright {
     margin: 46px auto 50px auto;
   }
 
-  div#work-proccess {
+  div#work-process {
     padding-top: 33px;
   }
-  div#work-proccess #w-process-img {
+  div#work-process #w-process-img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  div#work-proccess img {
-    width: 135px;
-    height: 135px;
+  div#work-process .w-process {
+    max-width: calc(50% - 10px);
   }
-  div#work-proccess img:first-child, div#work-proccess img:nth-child(2) {
+  div#work-process .w-process span {
+    -webkit-transform: scale(0.75) !important;
+            transform: scale(0.75) !important;
+    left: 35%;
+    top: 20%;
+  }
+  div#work-process .w-process strong {
+    font-size: 14px;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  div#work-process .w-process:first-child, div#work-process .w-process:nth-child(2) {
     margin-top: 14px;
   }
-  div#work-proccess h2 {
+  div#work-process h2 {
     margin: 0 auto;
     width: 190px;
     margin-top: 22px;
     line-height: 1.1em;
   }
 
-  .w-proccess {
+  .w-process {
     margin: 20px 0px 0 -2px;
   }
-  .w-proccess:nth-last-child(2) {
+  .w-process:nth-last-child(2) {
     margin-right: 12px;
   }
-  .w-proccess:last-child {
+  .w-process:last-child {
     margin-right: 0;
   }
 
@@ -1346,6 +1393,13 @@ div#copyright {
   }
 
   div#contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 0;
     height: 1195px;
   }
@@ -1355,20 +1409,11 @@ div#copyright {
     font-size: 24px;
   }
 
-  #contacts_layer {
-    width: 290px;
-    height: 487px;
-    margin-bottom: -487px;
-    margin-left: 1px;
-    top: -43px;
-  }
-
   div#contacts_details {
     width: 290px;
     height: 487px;
     left: 0px;
     text-align: left;
-    margin-bottom: -487px;
     top: 482px;
   }
   div#contacts_details h3 {
@@ -1402,6 +1447,7 @@ div#copyright {
     width: calc(100% - 30px);
     padding-left: 14px;
     padding-right: 14px;
+    background-color: rgba(255, 255, 255, 0.04);
   }
   #contacts_message h3 {
     margin-top: 53px;
@@ -1421,20 +1467,11 @@ div#copyright {
     padding: 17px 15px 13px 13px;
   }
 
-  .details.contacts_layer {
-    height: 160px;
-    width: 290px;
-    top: 485px;
-    left: 0px;
-    background-color: #ffffff;
-    opacity: 0.04;
-    margin-bottom: 20px;
-  }
-
   div.contact_details_block {
     padding: 38px 15px 20px 15px;
     height: 102px;
     margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   #contacts_message input.request-call {
