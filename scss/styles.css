@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav #menu, #menu-footer, .w-process, h3.reviews-header, .request-call, #contacts_message input.request-call {
   color: #ffffff;
   font-family: Montserrat;
@@ -378,9 +379,10 @@ div#r-col-2 h3 {
 #reviews h2 {
   padding-top: 93px;
   margin-top: 0;
-  margin-bottom: 88px;
+  padding-bottom: 88px;
   margin-left: -3px;
-  width: 100%;
+  margin: 0 auto;
+  width: 1110px;
 }
 
 #contacts h2 {
@@ -702,6 +704,11 @@ div#copyright {
   }
   .w-process:last-child {
     margin-left: 3px;
+  }
+
+  #w-process-img {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 
   div.block2 {
@@ -1138,7 +1145,7 @@ div#copyright {
 
   div#header {
     height: 640px;
-    background-size: cover;
+    background-size: 130% 100%;
     background-image: url("https://tarasdrobotko.github.io/sky.maket/images/mobile/header-bg.png");
   }
 
@@ -1350,29 +1357,20 @@ div#copyright {
     display: none;
   }
 
-  /* radio inputs */
-  .radio input {
-    display: none;
+  .container .slick-dots li {
+    padding-bottom: 20px;
+    width: 8px;
+    height: 8px;
   }
-
-  .radio span {
-    position: relative;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    top: -7px;
-    left: 130px;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0.1;
-  }
-  .radio span:last-child {
-    margin-left: 7px;
-  }
-
-  .radio input:checked + span {
-    background: #fff;
+  .container .slick-dots li.slick-active button:before {
+    content: '•';
+    color: #fff;
     opacity: 1;
+  }
+  .container .slick-dots li button::before {
+    content: '•';
+    color: #fff;
+    opacity: 0.2;
   }
 
   div#clients-block {

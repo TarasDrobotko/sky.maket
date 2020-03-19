@@ -66,25 +66,11 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(3)").attr("src", "images/mobile/ibm.png");
     $(".clients-img img:nth-child(4)").attr("src", "images/mobile/google.png");
 
-    if ($("#r-col-2").css("display") == "none") {
-      $("#tab1").prop("checked", true);
-    }
-    $("label.radio").click(function() {
-      $.ajax({
-        url: SITEURL,
-        method: "POST",
-        data: {},
-        success: function(data) {
-          if ($("#tab1").is(":checked")) {
-            $("#r-col-1").css("display", "block");
-            $("#r-col-2").css("display", "none");
-          } else if ($("#tab2").is(":checked")) {
-            $("#r-col-2").css("display", "block");
-            $("#r-col-1").css("display", "none");
-            $("#r-col-2").css("margin-left", "0");
-          }
-        }
-      });
+    $('#reviews .container').slick({
+      autoplay: true,
+      autoplaySpeed: 1000,
+      arrows: false,
+      dots: true,
     });
   }
 });
