@@ -202,7 +202,7 @@ div#w-process-img {
   }
 
   #w-process-measure {
-    background-position: -60px -102px ;
+    background-position: -60px -102px;
 	  width: 35px;
 	  height: 39px;
   }
@@ -645,6 +645,9 @@ div#copyright {
 
   .container {
     width: 920px;
+    &#about-us {
+       max-height: 390px;
+    }
   }
 
   h1 {
@@ -679,11 +682,11 @@ div#copyright {
   }
 
   div#ubout-us-img {
-    width: 445px;
-    height: 390px;
+    width: calc(50% - 15px);
+    max-height: 445px;
     margin: 0 30px 0 0;
-    background-size: cover;
-    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png") 100% 100% no-repeat;
+    background: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/about-us.png") no-repeat;
+    background-size: contain;
   }
   div#our-works-block {
     padding-bottom: 0;
@@ -705,7 +708,7 @@ div#copyright {
   }
 
   div.aside {
-    width: 445px;
+    width: calc(50% - 15px);
     line-height: 1.3em;
     p {
       margin-bottom: 8px;
@@ -726,11 +729,6 @@ div#copyright {
     height: 767px;
     background: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png") no-repeat;
     background-size: cover;
-  }
-
-  #work-process img {
-    width: 208px;
-    height: 208px;
   }
 
   .w-process {
@@ -1067,12 +1065,10 @@ div#copyright {
     width: 96%;
   }
 
-  div#ubout-us-img,
-  div.aside {
-    width: 47%;
+  div#ubout-us-img {
+    max-height: 425px;
   }
-
-  div.aside p,
+    div.aside p,
   div#reviews p.rev-text {
     width: 90%;
   }
@@ -1182,6 +1178,9 @@ div#copyright {
     margin: 0 auto;
     width: 290px;
     text-align: center;
+    &#about-us {
+      max-height: max-content;
+    }
   }
 
   div#header {
