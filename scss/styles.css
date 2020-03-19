@@ -262,14 +262,15 @@ div.block2 {
 div#header {
   height: 850px;
   text-align: center;
-  background-image: url("https://tarasdrobotko.github.io/sky.maket/images/header-bg.png");
+  background: url("https://tarasdrobotko.github.io/sky.maket/images/header-bg.png") no-repeat;
 }
 div#header nav {
   padding-top: 39px;
 }
 
 div#contacts {
-  background-image: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png");
+  background: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png") no-repeat;
+  background-size: cover;
   height: 860px;
 }
 div#contacts .container {
@@ -682,7 +683,8 @@ div#copyright {
 
   div#header {
     height: 767px;
-    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png");
+    background: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png") no-repeat;
+    background-size: cover;
   }
 
   #work-process img {
@@ -1243,9 +1245,9 @@ div#copyright {
     max-width: calc(50% - 10px);
   }
   div#work-process .w-process span {
-    -webkit-transform: scale(0.75) !important;
-            transform: scale(0.75) !important;
-    left: 35%;
+    -webkit-transform: scale(0.75) translateX(-50%) !important;
+            transform: scale(0.75) translateX(-50%) !important;
+    left: 50%;
     top: 20%;
   }
   div#work-process .w-process strong {

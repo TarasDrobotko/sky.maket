@@ -189,8 +189,7 @@ div#w-process-img {
     left: 50%;
     transform: translateX(-50%);
     top: 25%;
-    background-image:url('/images/sprites.png');
-    
+    background-image:url('https://tarasdrobotko.github.io/sky.maket//images/sprites.png');
   }
   strong {
     top: 50%; 
@@ -277,7 +276,8 @@ div.block2 {
 div#header {
   height: 850px;
   text-align: center;
-  background-image: url("https://tarasdrobotko.github.io/sky.maket/images/header-bg.png");
+  background: url("https://tarasdrobotko.github.io/sky.maket/images/header-bg.png") no-repeat;
+
 
   nav {
     padding-top: 39px;
@@ -285,7 +285,8 @@ div#header {
 }
 
 div#contacts {
-  background-image: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png");
+  background: url("https://tarasdrobotko.github.io/sky.maket/images/contacts-bg.png") no-repeat;
+  background-size: cover;
   height: 860px;
   .container {
   display: flex;
@@ -723,7 +724,8 @@ div#copyright {
 
   div#header {
     height: 767px;
-    background-image: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png");
+    background: url("https://tarasdrobotko.github.io/sky.maket/images/tablet/header-bg.png") no-repeat;
+    background-size: cover;
   }
 
   #work-process img {
@@ -1288,8 +1290,8 @@ div#copyright {
     .w-process {
       max-width: calc(50% - 10px);
       span {
-        transform:scale(0.75) !important;
-        left: 35%;
+        transform:scale(0.75) translateX(-50%)!important;
+        left: 50%;
         top: 20%;
       }
       strong {
