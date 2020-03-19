@@ -445,7 +445,7 @@ div#r-col-2 h3 {
   opacity: 0.8;
 }
 #contacts_message textarea {
-  line-height: 0.5em;
+  line-height: 1.5em;
   resize: none;
   margin-bottom: 40px;
   height: 99px;
@@ -475,7 +475,6 @@ div#contacts_details {
   top: -35px;
   width: 540px;
   height: 600px;
-  left: 570px;
   text-align: left;
   margin-bottom: -600px;
 }
@@ -494,6 +493,15 @@ div#contacts_details p {
   font-weight: 700;
   line-height: 30.01px;
   letter-spacing: 0.18px;
+}
+div#contacts_details a {
+  color: #fff;
+}
+div#contacts_details a:hover {
+  color: #d7d7d7;
+}
+div#contacts_details a:visited {
+  color: #3761a0;
 }
 
 div.contact_details_block {

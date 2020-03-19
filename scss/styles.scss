@@ -482,7 +482,7 @@ div#r-col-2 {
   }
 
   textarea {
-    line-height: 0.5em;
+    line-height: 1.5em;
     resize: none;
     margin-bottom: 40px;
     height: 99px;
@@ -515,7 +515,7 @@ div#contacts_details {
   top: -35px;
   width: 540px;
   height: 600px;
-  left: 570px;
+ // left: 570px;
   text-align: left;
   margin-bottom: -600px;
   h3 {
@@ -535,7 +535,17 @@ div#contacts_details {
     line-height: 30.01px;
     letter-spacing: 0.18px;
   }
+  a {
+    color: #fff;
+    &:hover {
+    color: #d7d7d7;
+    }
+    &:visited {
+      color: rgb(55, 97, 160);
+    }
+  }
 }
+
 div.contact_details_block {
   padding: 40px 30px 30px 30px;
   height: 110px;
