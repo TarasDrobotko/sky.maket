@@ -66,11 +66,13 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(3)").attr("src", "images/mobile/ibm.png");
     $(".clients-img img:nth-child(4)").attr("src", "images/mobile/google.png");
 
+    // slick slider
     $('#reviews .container').slick({
       autoplay: true,
       autoplaySpeed: 1000,
       arrows: false,
       dots: true,
     });
+
   }
 });

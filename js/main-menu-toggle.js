@@ -1,4 +1,6 @@
 //main menu toggle
-$('.menu__icon').on('click', function(){
-    $('ul#menu').toggleClass('active');
-  });
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+  $('ul#menu').toggleClass('active');
+});
