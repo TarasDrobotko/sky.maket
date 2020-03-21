@@ -1133,6 +1133,10 @@ div#copyright {
   #sky-realstate-footer div.container .footer-inline:last-child {
     margin-left: 0;
   }
+
+  div#copyright {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1563,6 +1567,7 @@ div#copyright {
     li {
       display: block;
       padding-right: 0;
+      font-size: 13px;
     }
   }
   .social-bar-wrap {
