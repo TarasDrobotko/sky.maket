@@ -281,6 +281,9 @@ div#contacts .container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer-info {
@@ -393,19 +396,16 @@ div#r-col-2 h3 {
   padding-top: 79px;
   padding-bottom: 59px;
   margin-top: 0px;
-  margin-bottom: 35px;
+  margin-bottom: 0;
   letter-spacing: 0;
 }
 
 #contacts_message {
   background-color: rgba(255, 255, 255, 0.04);
-  position: relative;
-  top: 0;
-  z-index: 2;
   height: 600px;
   text-align: left;
   padding-left: 30px;
-  margin-bottom: -600px;
+  padding-right: 30px;
 }
 #contacts_message h3 {
   font-family: Montserrat;
@@ -472,12 +472,9 @@ div#r-col-2 h3 {
 }
 
 div#contacts_details {
-  position: relative;
-  top: -35px;
   width: 540px;
   height: 600px;
   text-align: left;
-  margin-bottom: -600px;
 }
 div#contacts_details h3 {
   margin-top: -3px;
@@ -509,6 +506,7 @@ div.contact_details_block {
   padding: 40px 30px 30px 30px;
   height: 110px;
   margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 div.clients-img {
@@ -832,21 +830,10 @@ div#copyright {
     padding-top: 11px;
   }
 
-  #contacts_layer {
-    top: -33px;
-    width: calc(50% - 13px);
-    height: 572px;
-    background-color: #ffffff;
-    opacity: 0.04;
-    margin-bottom: -572px;
-    margin-left: 1px;
-  }
-
   div#contacts_details {
     width: 445px;
     height: 572px;
     text-align: left;
-    margin-bottom: -572px;
   }
   div#contacts_details h3 {
     margin-bottom: 22px;
@@ -870,6 +857,7 @@ div#copyright {
     width: calc(50% - 73px);
     margin-left: 2px;
     padding-right: 30px;
+    height: 572px;
   }
   #contacts_message h3 {
     margin-bottom: 30px;
@@ -888,16 +876,6 @@ div#copyright {
   #contacts_message textarea {
     padding: 22px 20px 20px 18px;
     opacity: 1;
-  }
-
-  .contacts_layer {
-    height: 170px;
-    top: -33px;
-    width: calc(50% - 17px);
-    left: calc(50% + 17px);
-    background-color: #ffffff;
-    opacity: 0.04;
-    margin-bottom: 30px;
   }
 
   div.contact_details_block {
@@ -1094,7 +1072,8 @@ div#copyright {
   }
 
   div.contact_details_block {
-    padding: 33px 10px 34px 30px;
+    height: 118px;
+    padding: 33px 25px 19px 30px;
   }
   div.contact_details_block p {
     width: 100%;
@@ -1483,16 +1462,14 @@ div#copyright {
   }
   div#contacts h2 {
     padding-top: 43px;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
     font-size: 24px;
   }
 
   div#contacts_details {
     width: 290px;
     height: 487px;
-    left: 0px;
     text-align: left;
-    top: 482px;
   }
   div#contacts_details h3 {
     margin-bottom: 15px;
@@ -1523,12 +1500,14 @@ div#copyright {
 
   #contacts_message {
     width: calc(100% - 30px);
+    height: 485px;
     padding-left: 14px;
     padding-right: 14px;
     background-color: rgba(255, 255, 255, 0.04);
+    margin-bottom: 40px;
   }
   #contacts_message h3 {
-    margin-top: 53px;
+    margin-top: 45px;
     margin-bottom: 28px;
     letter-spacing: 0.5px;
   }
