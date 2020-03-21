@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     resizeProcessBlocks();
 
-    $(window).resize(function() { 
+    $(window).resize(function() {
       $.ajax({
         url: SITEURL,
         method: "POST",
@@ -21,13 +21,6 @@ $(document).ready(function() {
         }
       });
     });
-
-    for (i = 1; i <= 4; i++) {
-      $("#work-process-" + i).attr(
-        "src",
-        "images/tablet/our-working-process-" + i + ".png"
-      );
-    }
 
     for (i = 1; i <= 4; i++) {
       $("#our-works-block img:nth-child(" + (i + 1) + ")").attr(
@@ -47,11 +40,6 @@ $(document).ready(function() {
 
   if (windowSize <= 767) {
     for (i = 1; i <= 4; i++) {
-      $("#work-process-" + i).attr(
-        "src",
-        "images/mobile/work-process-" + i + ".png"
-      );
-
       $("#our-works-block img:nth-child(" + (i + 1) + ")").attr(
         "src",
         "images/mobile/our-work-" + i + ".png"
@@ -67,12 +55,11 @@ $(document).ready(function() {
     $(".clients-img img:nth-child(4)").attr("src", "images/mobile/google.png");
 
     // slick slider
-    $('#reviews .container').slick({
+    $("#reviews .container").slick({
       autoplay: true,
       autoplaySpeed: 1000,
       arrows: false,
-      dots: true,
+      dots: true
     });
-
   }
 });
