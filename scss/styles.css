@@ -63,7 +63,8 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 1110px;
   text-align: center;
 }
@@ -1171,7 +1172,8 @@ div#copyright {
   }
 
   .container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 290px;
     text-align: center;
   }

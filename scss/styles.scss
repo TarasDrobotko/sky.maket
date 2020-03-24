@@ -22,6 +22,13 @@
   }
 }
 
+@mixin push--auto {
+  margin: { 
+      left: auto;
+      right: auto;
+  }
+}
+
 html,
 body {
   font: 400 16px Lato;
@@ -66,7 +73,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  @include push--auto;
   width: 1110px;
   text-align: center;
 }
@@ -1137,9 +1144,11 @@ div#copyright {
   div#copyright {
     font-size: 14px;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
+
   %request-call-mob {
     letter-spacing: 0.02em;
     font: 700 1.2em Montserrat;
@@ -1184,7 +1193,7 @@ div#copyright {
   }
 
   .container {
-    margin: 0 auto;
+    @include push--auto;
     width: 290px;
     text-align: center;
     &#about-us {
@@ -1291,8 +1300,7 @@ div#copyright {
     padding-top: 33px;
 
     p {
-      margin-left: auto;
-      margin-right: auto;
+      @include push--auto;
       margin-top: 27px;
       line-height: 1.6em;
     }
@@ -1582,8 +1590,7 @@ div#copyright {
   }
 
   #sky-realstate-footer div.container .footer-inline:last-child {
-    margin-left: auto;
-    margin-right: auto;
+     @include push--auto;
   }
 
   div#copyright {

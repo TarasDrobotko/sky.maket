@@ -6,7 +6,7 @@ $(document).ready(function() {
     function resizeProcessBlocks() {
       var $el = $(".w-process");
       var elWidth = $el.outerWidth();
-      $el.css("height", elWidth);
+      $el.css("height", elWidth / 1.14);
     }
 
     resizeProcessBlocks();
